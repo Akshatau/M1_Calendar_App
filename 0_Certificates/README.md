@@ -14,5 +14,7 @@
        Course: C Programming 
        Points Earned: 260
  ![hackerearth](https://user-images.githubusercontent.com/46949702/152684316-95ff6851-bb94-4ec7-9566-7b614dd23787.png)
-* ss og github learning
-* hackerearth points
+
+### d) Platform: GitHub
+       Course: Introduction to Github
+       Date of Completion: 06 February, 2022
