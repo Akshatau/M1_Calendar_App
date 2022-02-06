@@ -18,3 +18,4 @@
 ### d) Platform: GitHub
        Course: Introduction to Github
        Date of Completion: 06 February, 2022
+  ![github ](https://user-images.githubusercontent.com/46949702/152688149-280fca69-d125-49fe-8bbc-809f82035c7f.png)
