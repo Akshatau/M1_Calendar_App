@@ -3,7 +3,7 @@
 ### a) Course: C Programming 
        Platform: SoloLearn
        Date of Completion: 02 February, 2022
- ![SoloLearn Certificate](https://github.com/LTTS_Github/M1_OnlineCalendar_App/blob/0_Certificates/SoloLearn_Certificate.png)
+ ![SoloLearn Certificate](https://user-images.githubusercontent.com/46949702/152684603-736ea0a1-f369-46f6-8f81-de0e71ba0117.png)
 
 ### b) Platform: SoloLearn
        Course: C Programming 
