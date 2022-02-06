@@ -4,7 +4,7 @@
 
 ## 2)Behavioural Design
 ### a)Flowchart
-
+![flowchart](https://user-images.githubusercontent.com/46949702/152684681-f4894926-b3d5-40b2-ac2b-297645313f1a.png)
 
 ### b)Use case Diagram
 ![use case diagram](https://user-images.githubusercontent.com/46949702/152684207-1062d514-217e-4df2-b1f4-893374380720.png)
