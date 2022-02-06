@@ -22,4 +22,17 @@ LLR-3.1: View task.
 
 ## SWOT Analysis
 
-## 4Hs 1W
+
+## 5W's 1H
+* What? 
+- A calendar is an application which allows its user to access date, day, month, year details.
+* Where?
+- These are usually installed on smartphones and accessed anywhere.
+* When?
+- It is used offline anytime.
+* Why?
+- It is used by people to complete their tasks on time and be updated.
+* Who?
+- It is used by all people.
+* How?
+- With certain opeerations dates are calculated and displayed to users.
