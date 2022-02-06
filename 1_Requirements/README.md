@@ -1,7 +1,7 @@
 # 2. Requirements
 
 # Description
-* An application used to display calendar which include year, months, day details which can be accessed by anyone, anywhere, anytime. It is accountable as it can add delete tasks and display events of particular day.
+* An application used to display calendar which include year, month, day details which can be accessed by anyone, anywhere, anytime. It is accountable as it can perform operations like addition, deletion of tasks and display events of particular day.
 
 ## a)High Level Requirements:
 * HLR-1: Presentation of calendar.
