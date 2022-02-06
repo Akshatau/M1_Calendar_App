@@ -20,19 +20,45 @@ LLR-2.3:
 LLR-3.1: Add task to day.
 LLR-3.1: View task.
 
-## SWOT Analysis
+# SWOT Analysis
+## Strengths:.
+* Help to keep track of upcomming events.
+* Helps to be organised.
+* It sets boundaries for incomplete tasks.
+* It keeps us accountable.
+* Maximise your day productivity.
+* Access anywhere, anytime without need of internet.
+
+## Weakness:
+* Need physical access to your tool.
+* Too many options can make simple event scheduling complicated.
+* Expensive
 
 
-## 5W's 1H
+## Opportunites:
+* It keeps us accountable.
+* Lets you view calendars by month, quater or year.
+* Simple and effective tool.
+* Visualize my daily tasks.
+* Day planner.
+* Easy to use.
+
+## Threats:
+* Calendar tools are either simple or complex.
+* Dependent on technology.
+* Security Concerns.
+
+
+# 5W's 1H
 * What? 
-- A calendar is an application which allows its user to access date, day, month, year details.
+  A calendar is an application which allows its user to access date, day, month, year details.
 * Where?
-- These are usually installed on smartphones and accessed anywhere.
+  These are usually installed on smartphones and accessed anywhere.
 * When?
-- It is used offline anytime.
+  It is used offline anytime.
 * Why?
-- It is used by people to complete their tasks on time and be updated.
+  It is used by people to complete their tasks on time and be updated.
 * Who?
-- It is used by all people.
+  It is used by all people.
 * How?
-- With certain opeerations dates are calculated and displayed to users.
+  With certain opeerations dates are calculated and displayed to users.
