@@ -1,6 +1,10 @@
 # Architecture
 
-## Design
+## Structural Design
+
+## Behavioural Design
+### Flowchart
+
 * structural
 * Behavioural
     * Flowchart
