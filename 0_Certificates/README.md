@@ -8,7 +8,7 @@
 ### b) Platform: SoloLearn
        Course: C Programming 
        Date of Completion: 02 February, 2022
- ![Netcad -Linux Certificate](https://github.com/LTTS_Github/M1_OnlineCalendar_App/blob/0_Certificates/netcad.png)
+![netcad](https://user-images.githubusercontent.com/46949702/152684556-84519530-f1a1-4adb-ae8a-55f82c9c48ca.png)
  
 ### c) Platform: HacherEarth
        Course: C Programming 
