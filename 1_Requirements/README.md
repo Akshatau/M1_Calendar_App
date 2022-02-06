@@ -10,25 +10,25 @@
 * HLR-4: Display tasks.
 
 ## b)Low Level Requirements:
-LLR-1.1: Input data(year) is accesed from users.
-LLR-1.2: Format of monthly view of twelve months is selected for particular year.
-LLR-1.3: Calculation of leap year and take required steps.
-LLR-1.4: Find the first day of year falls on wic day.
-LLR-1.5: Account the late day of the year.
+-LLR-1.1: Input data(year) is accesed from users.
+-LLR-1.2: Format of monthly view of twelve months is selected for particular year.
+-LLR-1.3: Calculation of leap year and take required steps.
+-LLR-1.4: Find the first day of year falls on wic day.
+-LLR-1.5: Account the late day of the year.
 
-LLR-2.1: Access users choice to add or delete tasks.
-LLR-2.2: Selection of date and month for addition of task.
-LLR-2.3: Add new task if no task is present.
-LLR-2.4: Selection of date and month for deletion of task.
-LLR-2.5: Delete the present task.
-LLR-2.6: Deletion is invalid when there are no events created.
+-LLR-2.1: Access users choice to add or delete tasks.
+-LLR-2.2: Selection of date and month for addition of task.
+-LLR-2.3: Add new task if no task is present.
+-LLR-2.4: Selection of date and month for deletion of task.
+-LLR-2.5: Delete the present task.
+-LLR-2.6: Deletion is invalid when there are no events created.
 
-LLR-3.1: For addition of task operation increase task count by one.
-LLR-3.2: For deletion of task operation decrease task count by one.
+-LLR-3.1: For addition of task operation increase task count by one.
+-LLR-3.2: For deletion of task operation decrease task count by one.
 
-LL4-4.1: Access input from user to view all tasks on particular date
-LLR-4.2: Input date.
-LLR-4.3: Print error if there are no tasks present.
+-LL4-4.1: Access input from user to view all tasks on particular date
+-LLR-4.2: Input date.
+-LLR-4.3: Print error if there are no tasks present.
 
 # SWOT Analysis
 ## Strengths:.
