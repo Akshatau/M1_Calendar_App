@@ -1,15 +1,15 @@
 # 2. Requirements
 
 ## Description
-* An application used to display calendar , set events
+* An application used to display calendar which include year, months, day details which can be accessed by anyone, anywhere, anytime. It is accountable as it can add delete tasks and display events of particular day.
 
-## High Level Requirements:
+## a)High Level Requirements:
 * HLR-1: Presentation of calendar.
 * HLR-2: Operations on tasks.
 * HLR-3: Updation of tasks.
 * HLR-4: Display tasks.
 
-## Low Level Requirements:
+## b)Low Level Requirements:
 LLR-1.1: Input data(year) is accesed from users.
 LLR-1.2: Format of monthly view of twelve months is selected for particular year.
 LLR-1.3: Calculation of leap year and take required steps.
