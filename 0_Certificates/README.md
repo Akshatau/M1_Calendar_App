@@ -13,7 +13,8 @@
 ### c) Platform: HacherEarth
        Course: C Programming 
        Points Earned: 1030
-       ![hackerearth1](https://user-images.githubusercontent.com/46949702/153260475-10c5262a-4819-42ac-83e1-b007f827bbdf.png)
+![hackerearth1](https://user-images.githubusercontent.com/46949702/153260475-10c5262a-4819-42ac-83e1-b007f827bbdf.png)
+       
 
 ### d) Platform: GitHub
        Course: Introduction to Github
