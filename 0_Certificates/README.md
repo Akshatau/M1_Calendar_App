@@ -1,23 +1,5 @@
 # 1. Certificates
 ## Course Certifications
-<<<<<<< HEAD
-### a) Platform: SoloLearn
-* Course: C Programming 
-* Date of Completion: 02 February, 2022
- ![SoloLearn Certificate](https://github.com/LTTS_Github/M1_OnlineCalendar_App/blob/0_Certificates/SoloLearn_Certificate.png)
-
-### b) Platform: Netcad Acadamy
- * Course: NDG Linux - Unhatched 
- * Date of Completion: 03 February, 2022
-
- ![Netcad -Linux Certificate](https://github.com/LTTS_Github/M1_OnlineCalendar_App/blob/0_Certificates/netcad.png)
-
-### c) Platform: HackerEarth
-* Course: C Programming 
-* Points: 260
-
-### d) Platform: Github 
-=======
 ### a) Course: C Programming 
        Platform: SoloLearn
        Date of Completion: 02 February, 2022
@@ -38,4 +20,3 @@
        Course: Introduction to Github
        Date of Completion: 06 February, 2022
   ![github ](https://user-images.githubusercontent.com/46949702/152688149-280fca69-d125-49fe-8bbc-809f82035c7f.png)
->>>>>>> 8ac4fdf32cc7ca73f8ab3a56d44b33da75c04a63
