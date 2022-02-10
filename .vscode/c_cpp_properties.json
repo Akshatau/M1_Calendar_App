@@ -3,11 +3,11 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0",
-                "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/ssp"
+                "C:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\11.2.0"
             ],
             "defines": [
                 "_DEBUG",
+
                 "UNICODE",
                 "_UNICODE"
             ],
