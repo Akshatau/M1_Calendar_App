@@ -1,5 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
+/**
+ * @file main.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2022-02-10
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
+#include "stdio.h"
+#include "stdlib.h"
 
 int get_1st_weekday(int year){
 
@@ -23,7 +34,8 @@ int main()
 
    startingDay=get_1st_weekday(year);
 
-   for(month=0;month<12;month++){
+   for(month=0;month<12;month++)
+   {
 
       daysInMonth=monthDay[month];
       printf("\n\n---------------%s-------------------\n",months[month]);
