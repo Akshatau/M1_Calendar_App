@@ -18,3 +18,6 @@ Repository on mini project-1 based on calendar application implemented using C p
 ![Project Score](https://api.codiga.io/project/31021/score/svg)
 
 ![Project Quality](https://api.codiga.io/project/31021/status/svg)
+
+## Build Status
+[![Build-linux](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Build-linux.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Build-linux.yml)
