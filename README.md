@@ -13,8 +13,8 @@ Repository on mini project-1 based on calendar application implemented using C p
 
 ## Batches
 # For code quality
- #Platform: Codacy 
-![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c)]
+ # Platform: Codacy 
+![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c)
 # For Project quality
 # Platform: Codevita
 ![Project Score](https://api.codiga.io/project/31021/score/svg)
