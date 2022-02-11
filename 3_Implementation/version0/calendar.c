@@ -1,36 +1,45 @@
+//Include files
 #include <stdio.h>
 #include <stdlib.h>
 
-int get_1st_weekday(int year){
-
+//function to return the value for starting day of month of a particular year
+int get_first_weekday(int year)
+{
   int d;
+  //Gibborian rule to find day of a year
   d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
   return d;
 }
 
-check_leap_year(int year)
+//Function to return value for number of days present in th month February
+find_leap_year(int year)
 {
-    if((year%4==0&&year%100!=0)||year%400==0)
-        return 29;
-    else return 28;
+    int DaysInAMonth;
+    if((year%4==0&&year%100!=0)||year%400==0) //To find leap year condition
+        DaysInAMonth=29;  //If the year is leap year, number of days in February is 29
+    else
+        DaysInAMonth=28;  //If the year is leap year, number of days in February is 28
+    return DaysInAMonth;
 }
 
+//Function for user interface
 void display_calendar(int year)
 {
     int month,day,daysInMonth,weekDay=0;
 
     char *months[]={"January","February","March","April","May","June","July","August","September","October","November","December"};
     int monthDay[]={31,28,31,30,31,30,31,31,30,31,30,31};
+    //Total number of days in every month
 
-     monthDay[1]=check_leap_year(year);
+     monthDay[1]=find_leap_year(year);  //Rewrite the number of days in month February if it is a leap year
 
-    int startingDay=get_1st_weekday(year);
+    int startingDay=get_first_weekday(year); //Assign the first day of month(like Sunday, Monday.....)
 
    for(month=0;month<12;month++)
     {
 
       daysInMonth=monthDay[month];
-      printf("\n\n---------------%s-------------------\n",months[month]);
+      printf("\n\n---------------%s %d-------------------\n",months[month],year);
       printf("\n  Sun  Mon  Tue  Wed  Thurs  Fri  Sat\n");
 
       for(weekDay=0;weekDay<startingDay;weekDay++)
@@ -52,7 +61,8 @@ void display_calendar(int year)
 
 typedef struct ToDo todo;
 
-struct ToDo{
+struct ToDo
+{
  char data[100];
  todo *link;
  int count;
@@ -62,27 +72,35 @@ todo *start=NULL;
 int main()
 {
     int choice,option;
-    system("Color 4B");
-    //printf("OPTIONS\n");
-    printf("1. Calendar\n");
-    printf("2. TO-DO List\n");
+    char name[50];
+    system("Color 6E");
+    printf("Your name...........\n");
+    scanf("%s",name);
+
+      system("pause");
+     printf("\nHello %s,\n",name);
+     printf("What can I do for you?\n\n");
+    printf("1. View Calendar\n");
+    printf("2. TO-DO List\n\n");
     printf("Enter your choice\n");
     scanf("%d",&option);
     switch(option)
     {
-    case 1: system("Color 3F");
+    case 1: system("Color 2F");
             int year;
-            printf("\nEnter your desired year:");
+            system("cls");
+            printf("\nEnter your desired year of calendar:");
             scanf("%d",&year);
+            system("pause");
+            welcomeUser_CALENDAR(year);
             display_calendar(year);
-
-           break;
+            break;
 
     case 2:
-    welcomeUser();
     while(1){
-        system("color 3F");
+        system("color 5F");
         system("cls");
+        welcomeUser_TODO();
         printf("\n1.See Your ToDo List");
         printf("\n2.Create Your ToDos");
         printf("\n3.Delete Your ToDos");
@@ -110,19 +128,35 @@ int main()
         }
 
     }
-    break;
+        break;
+
+    default:
+        printf("Please enter VALID option\n");
+        break;
     }
 }
 
-void welcomeUser(){
-   system("color 4F");
-   printf("\n\n\n\n\n");
-   printf("\t------------------------------------------------------------------------------------------------------\n\n");
-   printf("\t#################################### YOUR TODO LIST APP ##############################################\n\n");
-   printf("\t------------------------------------------------------------------------------------------------------");
-   printf("\n\n\n\t\t*******************************WELCOME*******************************\n\n\n\n\n\n\n\n\n\t");
+void welcomeUser_TODO()
+{
+   system("color 5F");
+   printf("\n\n");
+    printf("================================================\n");
+   printf("\t       TO-DO LIST                 \n");
+   printf("================================================\n");
+
    system("pause");
 }
+
+void welcomeUser_CALENDAR(int year)
+{
+   system("color 2F");
+   printf("\n\n");
+   printf("================================================\n");
+   printf("\t       CALENDAR %d                  \n",year);
+   printf("================================================\n");
+
+}
+
 
 void seeToDo(){
    system("cls");
@@ -142,15 +176,16 @@ void seeToDo(){
        system("pause");
    }
 
-void createToDo(){
+void createToDo()
+{
     char k;
     todo *t,*temp;
     system("cls");
     while(1){
-        printf("\nWant to add?y/n");
+        printf("\nWant to add? Y/N\n");
         fflush(stdin);
         scanf("%c",&k);
-        if(k=='n')
+        if(k=='N')
             break;
        else{
         if(start==NULL){
@@ -176,7 +211,8 @@ void createToDo(){
    }
 }
 
-void delToDo(){
+void delToDo()
+{
   system("cls");
   int d;
   todo *temp1,*temp;
@@ -226,7 +262,7 @@ void updateToDo()
   char k;
   while(1)
     {
-        printf("\nWant to add?y/n");
+        printf("\nWant to add?y/n\n");
         fflush(stdin);
         scanf("%c",&k);
         if(k=='n')
