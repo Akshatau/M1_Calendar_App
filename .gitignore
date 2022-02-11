@@ -7,3 +7,9 @@
 *.gcda
 *.gcno
 *.i
+*.png
+*.css
+*.html
+*.js
+*.jpg
+*.svg
