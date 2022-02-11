@@ -5,6 +5,7 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "main.c"
+# 12 "main.c"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -722,7 +723,7 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 873 "/usr/include/stdio.h" 3 4
 
-# 2 "main.c" 2
+# 13 "main.c" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 25 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -1815,10 +1816,10 @@ extern int getloadavg (double __loadavg[], int __nelem)
 # 1014 "/usr/include/stdlib.h" 2 3 4
 # 1023 "/usr/include/stdlib.h" 3 4
 
-# 3 "main.c" 2
+# 14 "main.c" 2
 
 
-# 4 "main.c"
+# 15 "main.c"
 int get_1st_weekday(int year){
 
   int d;
@@ -1841,7 +1842,8 @@ int main()
 
    startingDay=get_1st_weekday(year);
 
-   for(month=0;month<12;month++){
+   for(month=0;month<12;month++)
+   {
 
       daysInMonth=monthDay[month];
       printf("\n\n---------------%s-------------------\n",months[month]);
