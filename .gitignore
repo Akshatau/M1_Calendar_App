@@ -3,3 +3,7 @@
 *.s
 *.vscode
 *version0
+*.gcov
+*.gcda
+*.gcno
+*.i
