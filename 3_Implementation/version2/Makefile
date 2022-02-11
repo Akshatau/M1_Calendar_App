@@ -1,11 +1,11 @@
 #Target : Dependencies
 #<TAB>commands
 
-build : project_main.c main.c
-	gcc project_main.c main.c -o main.out
+build : calendar_main.c calendar.c
+	gcc calendar_main.c calendar.c -o calendar.out
 
 Run : build
-	./main.out
+	./calendar.out
 
 clean:
 	rm -rf *.o *.out *.i *.s

@@ -13,7 +13,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "string.h"
-
 int get_first_weekday(int year);
 int find_leap_year(int year);
 void display_calendar(int year);
@@ -102,7 +101,10 @@ void display_calendar(int year)
 }
 
 typedef struct ToDo todo;
-
+/**
+ * @brief 
+ * 
+ */
 struct ToDo      
 {
  char data[100]; //data type-linked list
@@ -182,10 +184,6 @@ int main()
     return 0;
 }
 
-/**
- * @brief welcome message at ToDo window
- * 
- */
 void welcomeUser_TODO()
 {
    system("color 5F");
@@ -197,11 +195,6 @@ void welcomeUser_TODO()
    system("pause");
 }
 
-/**
- * @brief welcome message at Calendar window
- * 
- * @param year 
- */
 void welcomeUser_CALENDAR(int year)
 {
    system("color 2F");
@@ -212,10 +205,7 @@ void welcomeUser_CALENDAR(int year)
 
 }
 
-/**
- * @brief function used to display the present ToDo list with elements if present
- * 
- */
+
 void see_ToDo()
 {
    system("cls");
@@ -237,10 +227,6 @@ void see_ToDo()
        system("pause");
    }
 
-/**
- * @brief Create a ToDo object
- * 
- */
 void create_ToDo()  //Create a new element
 {
     char k;
@@ -278,10 +264,6 @@ void create_ToDo()  //Create a new element
    }
 }
 
-/**
- * @brief Function used to delete elemnts from ToDo list
- * 
- */
 void delete_ToDo() //Delete an element from ToDo
 {
   system("cls");
@@ -313,10 +295,6 @@ void delete_ToDo() //Delete an element from ToDo
 system("pause");
 }
 
-/**
- * @brief used to keep track of number of nodes
- * 
- */
 void fixcount()
 {
   todo *temp;
@@ -331,10 +309,6 @@ void fixcount()
 
 }
 
-/**
- * @brief Used to update the ToDo list if any operations are performed
- * 
- */
 void update_ToDo()
 {
   system("cls");

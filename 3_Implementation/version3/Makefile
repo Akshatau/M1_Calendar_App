@@ -1,35 +1,11 @@
 #Target : Dependencies
 #<TAB>commands
-PROJ_NAME=Main
 
-#To check if the OS is Windows or Linux and set the executable file extenstion
-ifdef OS
-	RM=del/q
-	FixPath= $(subst /,\,$1)
-	EXEC = exe
-else
-   ifeq ($(shell uname),Linux)
-   	RM=rm-rf
-	FixPath= $1
-	EXEC = out
-endif
-endif
-
-build : $(SRC)
-	gcc $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+build : calendar_main.c calendar.c test_calendar.c unity.c
+	gcc calendar_main.c calendar.c test_calendar.c unity.c -o calendar.out -lm
 
 Run : build
-	./$(call FixPath,$(PROJ_NAME).$(EXEC))
-
-static_analysis:
-cppcheck --enable=all $(SRC)
-
-dynamic_analysis: build
-	valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))
-
-coverage:
-	gcc -fprofile-arcs -ftest-coverage $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm ./${PROJECT_NAME}
-	gcov -a src/projects_main.c src main.c
+	./calendar.out
 
 clean:
-	$(RM) $(call FixPath.$(BUILD_DIR)/*.out)
+	rm -rf *.o *.out *.i *.s
