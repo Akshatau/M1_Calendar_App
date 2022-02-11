@@ -11,13 +11,13 @@ Repository on mini project-1 based on calendar application implemented using C p
 * Design
 * Test plan         
 
-##Batches
-#For code quality
-#Platform: Codacy 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c)](https://www.codacy.com/gh/Akshatau/M1_Calendar_App/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Akshatau/M1_Calendar_App&amp;utm_campaign=Badge_Grade)
+## Batches
+# For code quality
+ #Platform: Codacy 
+![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c)](https://www.codacy.com/gh/Akshatau/M1_Calendar_App/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Akshatau/M1_Calendar_App&amp;utm_campaign=Badge_Grade)
 
-#For Project quality
-#Platform: Codevita
-[!Project Score](https://api.codiga.io/project/31021/score/svg)
+# For Project quality
+# Platform: Codevita
+![Project Score](https://api.codiga.io/project/31021/score/svg)
 
-[!Project Quality](https://api.codiga.io/project/31021/status/svg)
+![Project Quality](https://api.codiga.io/project/31021/status/svg)
