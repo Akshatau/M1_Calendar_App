@@ -12,11 +12,9 @@ Repository on mini project-1 based on calendar application implemented using C p
 * Test plan         
 
 ## Batches
-### For code quality
- ### Platform: Codacy 
+ * Platform: Codacy 
 ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c)
-### For Project quality
-### Platform: Codevita
+* Platform: Codevita
 ![Project Score](https://api.codiga.io/project/31021/score/svg)
 
 ![Project Quality](https://api.codiga.io/project/31021/status/svg)
