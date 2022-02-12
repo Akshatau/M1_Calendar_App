@@ -2,7 +2,7 @@
 #<TAB>commands
 	
 PROJ_NAME=calendar
-SRC=calendar_main.c calendar.c test_calendar.c unity.c
+SRC=calendar_main.c src/calendar.c test/test_calendar.c unity/unity.c
 
 #To check if the OS is Windows or Linux and set the executable file extenstion
 ifdef OS
@@ -18,7 +18,7 @@ else
 endif
 
 build : $(SRC)
-	gcc $(SRC)  -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+	gcc $(SRC)  -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
 
 Run : build
 	./$(call FixPath,$(PROJ_NAME).$(EXEC))
