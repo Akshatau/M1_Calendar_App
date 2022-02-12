@@ -118,6 +118,6 @@
 * How?
   With certain operations, dates are calculated and displayed to users.
 
-## Research
+# Research
 * In recent times advancements in caledar application include location support, remainders, tasks schedulers, organise meetings.
 * In tems of cost we can see many applications are free and most of them are in-built in our system.
