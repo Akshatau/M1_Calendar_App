@@ -24,22 +24,24 @@
 | HLR_04 |LLR_02 | Display menu|
 | HLR_04 |LLR_03 | Fetch option from the users from a menu|
 |        |         |                                            |
-| HLR_05 | LLR_00| Display of To-Do List |
+| HLR_05 | LLR_00| Display of To-Do List window|
 | HLR_05 | LLR_01| Clear window|
 | HLR_05 | LLR_02| Start to display from first To-Do list item|
 | HLR_05 | LLR_03| Access one by one elements and diplay upto last element of list|
 | HLR_05 | LLR_04| Print message as Empty when there are no elements in List|
 |        |         |                                            | 
-| HLR_06 | LLR_00| View To-Do List|
+| HLR_06 | LLR_00| View To-Do List Items|
 | HLR_06 | LLR_01| Clear window|
 | HLR_06 | LLR_02| Confirm addition of an element to lists|
-| HLR_06 | LLR_03| Addition of elements should be one after the other with first come preferance|
+| HLR_07 | LLR_03 |Access one by one elements and diplay upto last element of list|
+| HLR_06 | LLR_03| Print message as Empty when there are no elements in List|
 |        |         |                                            |
-| HLR_07 | LLR_00 | Create To-Do List|
-| HLR_07 | LLR_01 | Clear window|
-| HLR_07 | LLR_02 | Confirm addition of an element to lists|
-| HLR_07 | LLR_03 |  Create some memory for new element|
-| HLR_07 | LLR_04 |Addition of elements should be one after the other with first come preferance|
+| HLR_06 | LLR_00| Create To-Do List Items|
+| HLR_06 | LLR_01| Clear window|
+| HLR_06 | LLR_01| Start to display from first To-Do list item|
+| HLR_06 | LLR_02| Confirm addition of an element to lists|
+| HLR_07 | LLR_03 |Create some memory for new element|
+| HLR_06 | LLR_03| Addition of elements should be one after the other with first come preferance|
 |        |         |                                            |
 | HLR_08 | LLR_00| Delete To-Do List|
 | HLR_08 |LLR_01 | Clear window|
@@ -48,6 +50,9 @@
 | HLR_08 | LLR_04| Deletion of an element from list is impposible when list is empty|
 |        |         |                                            |
 | HLR_09 | LLR_00 |Update To-Do List|
+| HLR_09 | LLR_00 |Update list with items if any operation like adiition or deletion of items fom list is performed|
+|        |         |                                            |
+| HLR_09 | LLR_00 |Count To-Do List items|
 | HLR_09 | LLR_01 |For addition of task operation, increase task count by one|
 | HLR_09 | LLR_02 |For deletion of task operation, decrease task count by one
 |        |         |                                            |
@@ -64,12 +69,13 @@
 * LLR-1: Locate first day of the year falls on which day.
 * LLR-1: Calender operations.
 
-* HLR-1: Display of To-Do List.
+* HLR-1: Display of To-Do List window.
 //* HLR-1: Application should be user friendly.
 * HLR-1: View To-Do List.
 * HLR-1: Create To-Do List.
 * HLR-1: Delete To-Do List.
 * HLR-1: Update To-Do List.
+| HLR_09 :Count To-Do List items.
 
 ## b)Low Level Requirements:
 - LLR-1.1: Change the colour of window to make your page appealing.
@@ -114,19 +120,6 @@
 - LLR-4.2: Input option.
 - LLR-4.3: Display error if other option is choosen.
 
-## Strengths:.                                      | ## Weakness:
-* Help to keep track of upcomming events.           |* Need physical access to your tool.
-* Helps to be organised.                            |* Too many options can make simple event scheduling complicated
-* It sets boundaries for incomplete tasks.          |* Expensive
-* It keeps us accountable.                          |
-* Access anywhere, anytime without need of internet.|
-----------------------------------------------------|-------------------------------
-## Opportunites:                                    |## Threats:
-* It keeps us accountable.                          |* Calendar tools are either simple or complex.
-* Can view calendars of any year.                   |
-* Simple and effective tool.                        |
-* Day planner.                                      |
-* Easy to use.
 
 
 
