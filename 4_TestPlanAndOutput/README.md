@@ -83,4 +83,11 @@ c) Deletion of ToDo Lists.
 | HLLR_02 | LLR_02 | 2020 | Returns number of days in february |29|
 | HLLR_02 | LLR_02 | 2022 | Returns number of days in february | 28|
 | HLLR_03| LLR_00 | 2015 | Returns intex of weekday when first day of a year falls|4|
+| HLLR_03| LLR_00 | 2016 | Returns intex of weekday when first day of a year falls|5|
+| HLLR_03| LLR_00 | 2017 | Returns intex of weekday when first day of a year falls|0|
+| HLLR_03| LLR_00 | 2018 | Returns intex of weekday when first day of a year falls|1|
+| HLLR_03| LLR_00 | 2019 | Returns intex of weekday when first day of a year falls|2|
+
+
+
 
