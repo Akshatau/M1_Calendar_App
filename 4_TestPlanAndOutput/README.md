@@ -72,3 +72,15 @@ c) Deletion of ToDo Lists.
 * HLR_7 :Count To-Do List items.
 * LLR-8: Calender operations.
 * HLR-9: Display of calendar.
+
+# Test Code Analysis
+
+| HLL_ID | LLR_ID | Input | Description|Expected output|
+|--------|-----------|------|-----------------|------|
+| HLL_01 | LLR_02 | 2016 | Decides whether year is leap or not and returns number of days in february|29|
+| HLLR_02 | LLR_02 | 2021 | Returns number of days in february | 28|
+| HLLR_02 | LLR_02 | 2016 | Returns number of days in february | 29|
+| HLLR_02 | LLR_02 | 2020 | Returns number of days in february |29|
+| HLLR_02 | LLR_02 | 2022 | Returns number of days in february | 28|
+| HLLR_03| LLR_00 | 2015 | Returns intex of weekday when first day of a year falls|4|
+
