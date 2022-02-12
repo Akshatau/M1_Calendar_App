@@ -62,3 +62,13 @@ b) Menu inputs of ToDo List.
 c) Deletion of ToDo Lists.
 -Error message when no items are in list
 
+## High Level Requirements:
+* HLR-1: Display of To-Do List window.
+* HLR-2: Application should be user friendly.
+* HLR_3: View To-Do List.
+* HLR-4: Create To-Do List.
+* HLR_5: Delete To-Do List.
+* HLR-6: Update To-Do List.
+* HLR_7 :Count To-Do List items.
+* LLR-8: Calender operations.
+* HLR-9: Display of calendar.
