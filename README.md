@@ -1,15 +1,20 @@
-# M1_Calendar_App 
-Repository on mini project-1 based on calendar application implemented using C programming.
-
+# Calendar Application
 
 ![icon](https://user-images.githubusercontent.com/46949702/152693733-ba48d2d2-5535-44d3-b0df-2b745fed7f2c.png)                                                          
                                                                                                              
-## Milestone- 1
-* Folder Structure
-* Idea
-* Requirements
-* Design
-* Test plan         
+
+
+## Folder Structure
+Folder                   | Description
+-------------------------| -----------------------------------------
+`1_Requirements`         | Documents detailing requirements and research
+`2_Architecture     `         | Behavioural and Structural UML Diagrams
+`3_Implemenatation `     | All code and documentation
+`4_Test plan and output     `       | Documents with test plans and procedures and Output
+`5_Report`               | Documentation of whole project
+`6_ImagesAndVideos`      | Code Execution Images and Videos
+`7_`Others      | Other files
+
 
 ## Batches
  * Platform: Codacy 
