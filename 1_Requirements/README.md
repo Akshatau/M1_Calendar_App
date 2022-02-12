@@ -5,7 +5,7 @@
 
 ## HIGH LEVEL REQUIREMENTS:
 | HLR_ID | LLR_ID | Description  | 
-|        |         |                                            |
+|----------|-------------|------------------------------|
 | HLR_01 | LLR_00| Display of calendar |  
 | HLR_01 | LLR_01| Change the colour of window to make your page appealing |  
 | HLR_01 | LLR_02| Fetch input from the users about year |  
