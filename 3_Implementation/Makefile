@@ -2,7 +2,7 @@
 #<TAB>commands
 	
 PROJ_NAME=calendar
-SRC=calendar_main.c src/calendar.c test/test_calendar.c unity/unity.c
+SRC=calendar_main.c src/calendar.c test/test_calendar.c unity/unity.c 
 
 #To check if the OS is Windows or Linux and set the executable file extenstion
 ifdef OS
