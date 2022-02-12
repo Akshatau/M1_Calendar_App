@@ -15,6 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Dynamic Analysis
       run: cd 3_Implementation
+    - name: valgrind
       run: .valgrind ./a.out &> valgrind.txt
     - name: make
       run: make
