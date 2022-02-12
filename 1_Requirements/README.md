@@ -33,35 +33,35 @@
 | HLR_06 | LLR_00| View To-Do List Items|
 | HLR_06 | LLR_01| Clear window|
 | HLR_06 | LLR_02| Confirm addition of an element to lists|
-| HLR_07 | LLR_03 |Access one by one elements and diplay upto last element of list|
+| HLR_06 | LLR_03 |Access one by one elements and diplay upto last element of list|
 | HLR_06 | LLR_03| Print message as Empty when there are no elements in List|
 |        |         |                                            |
-| HLR_06 | LLR_00| Create To-Do List Items|
-| HLR_06 | LLR_01| Clear window|
-| HLR_06 | LLR_01| Start to display from first To-Do list item|
-| HLR_06 | LLR_02| Confirm addition of an element to lists|
-| HLR_07 | LLR_03 |Create some memory for new element|
-| HLR_06 | LLR_03| Addition of elements should be one after the other with first come preferance|
+| HLR_07 | LLR_00| Create To-Do List Items|
+| HLR_07 | LLR_01| Clear window|
+| HLR_07 | LLR_02| Start to display from first To-Do list item|
+| HLR_07 | LLR_03| Confirm addition of an element to lists|
+| HLR_07 | LLR_04|Create some memory for new element|
+| HLR_07 | LLR_05| Addition of elements should be one after the other with first come preferance|
 |        |         |                                            |
 | HLR_08 | LLR_00| Delete To-Do List|
-| HLR_08 |LLR_01 | Clear window|
+| HLR_08 | LLR_01| Clear window|
 | HLR_08 | LLR_02|  Confirm deletion of an element from lists|
 | HLR_08 | LLR_03| Free some memory if element is deleted from list|
 | HLR_08 | LLR_04| Deletion of an element from list is impposible when list is empty|
 |        |         |                                            |
 | HLR_09 | LLR_00 |Update To-Do List|
-| HLR_09 | LLR_00 |Update list with items if any operation like adiition or deletion of items fom list is performed|
+| HLR_09 | LLR_01 |Update list with items if any operation like adiition or deletion of items fom list is performed|
 |        |         |                                            |
-| HLR_09 | LLR_00 |Count To-Do List items|
-| HLR_09 | LLR_01 |For addition of task operation, increase task count by one|
-| HLR_09 | LLR_02 |For deletion of task operation, decrease task count by one
+| HLR_10 | LLR_02 |Count To-Do List items|
+| HLR_10 | LLR_03 |For addition of task operation, increase task count by one|
+| HLR_10 | LLR_04 |For deletion of task operation, decrease task count by one
 |        |         |                                            |
-| HLR_10 | LLR_00 |Application should be user friendly|
-| HLR_10 | LLR_01 |Clear window|
-| HLR_10 | LLR_02 |Change the colour of window to make your page appealing|
-| HLR_10 | LLR_03 |Access input from user to switch to calendar mode or To-Do List mode|
-| HLR_10 | LLR_04 |Input option|
-| HLR_10 | LLR_05 |Display error if other option is choosen|
+| HLR_11 | LLR_00 |Application should be user friendly|
+| HLR_11 | LLR_01 |Clear window|
+| HLR_11 | LLR_02 |Change the colour of window to make your page appealing|
+| HLR_11 | LLR_03 |Access input from user to switch to calendar mode or To-Do List mode|
+| HLR_11 | LLR_04 |Input option|
+| HLR_11 | LLR_05 |Display error if other option is choosen|
 
 ## a)High Level Requirements:
 * HLR-1: Display of calendar.
