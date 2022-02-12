@@ -1,0 +1,10 @@
+Your name...........
+
+Hello 3,
+What can I do for you?
+
+1. View Calendar
+2. TO-DO List
+3. EXIT
+
+Enter your choice

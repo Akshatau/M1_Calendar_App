@@ -1,0 +1,215 @@
+Checking calendar.c ...
+calendar.c:148:11: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+          fflush(stdin);
+          ^
+calendar.c:173:9: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+        fflush(stdin);
+        ^
+calendar.c:181:8: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+       fflush(stdin);
+       ^
+calendar.c:245:9: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+        fflush(stdin);
+        ^
+calendar.c:251:8: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+       fflush(stdin);
+       ^
+calendar.c:174:9: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+        scanf("%s",t->data);
+        ^
+calendar.c:182:9: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+        scanf("%s",temp->data);
+        ^
+calendar.c:252:9: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+        scanf("%s",temp->data);
+        ^
+calendar.c:66:19: style: The scope of the variable 'daysInMonth' can be reduced. [variableScope]
+    int month,day,daysInMonth,weekDay=0;
+                  ^
+calendar.c:184:8: error: Uninitialized variable: t [uninitvar]
+       t->link=temp;
+       ^
+calendar.c:66:38: style: Variable 'weekDay' is assigned a value that is never used. [unreadVariable]
+    int month,day,daysInMonth,weekDay=0;
+                                     ^
+1/5 files checked 7% done
+Checking calendar_app.c ...
+calendar_app.c:263:9: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+        gets(t->data);
+        ^
+calendar_app.c:271:8: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+       gets(temp->data);
+       ^
+calendar_app.c:353:8: warning: Obsolete function 'gets' called. It is recommended to use 'fgets' or 'gets_s' instead. [getsCalled]
+       gets(temp->data);
+       ^
+calendar_app.c:233:11: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+          fflush(stdin);
+          ^
+calendar_app.c:262:9: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+        fflush(stdin);
+        ^
+calendar_app.c:270:8: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+       fflush(stdin);
+       ^
+calendar_app.c:346:9: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+        fflush(stdin);
+        ^
+calendar_app.c:352:8: portability: fflush() called on input stream 'stdin' may result in undefined behaviour on non-linux systems. [fflushOnInputStream]
+       fflush(stdin);
+       ^
+calendar_app.c:120:5: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+    scanf("%s",name);  //Make user friendly
+    ^
+calendar_app.c:69:19: style: The scope of the variable 'daysInMonth' can be reduced. [variableScope]
+    int month,day,daysInMonth,weekDay=0;
+                  ^
+calendar_app.c:273:8: error: Uninitialized variable: t [uninitvar]
+       t->link=temp;
+       ^
+calendar_app.c:69:38: style: Variable 'weekDay' is assigned a value that is never used. [unreadVariable]
+    int month,day,daysInMonth,weekDay=0;
+                                     ^
+2/5 files checked 17% done
+Checking calendar_main.c ...
+3/5 files checked 20% done
+Checking test_calendar.c ...
+test_calendar.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 31 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+test_calendar.c:39:0: error: failed to expand 'TEST_ASSERT_EQUAL', Wrong number of parameters for macro 'TEST_ASSERT_EQUAL'. [preprocessorErrorDirective]
+    TEST_ASSERT_EQUAL( )
+^
+test_calendar.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+4/5 files checked 21% done
+Checking unity.c ...
+unity.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+unity.c:277:9: style: The scope of the variable 'nibble' can be reduced. [variableScope]
+    int nibble;
+        ^
+unity.c:1359:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+    UNITY_UINT32 i;
+                 ^
+unity.c:1399:18: style: The scope of the variable 'i' can be reduced. [variableScope]
+    UNITY_UINT32 i;
+                 ^
+unity.c:1523:18: style: The scope of the variable 'bytes' can be reduced. [variableScope]
+    UNITY_UINT32 bytes;
+                 ^
+unity.c:1440:20: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+    UNITY_UINT32 i = 0;
+                   ^
+Checking unity.c: AVR...
+Checking unity.c: CMOCK...
+Checking unity.c: RUN_TEST...
+Checking unity.c: UINTPTR_MAX...
+unity.c:1842:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_START' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_START();
+^
+unity.c:1852:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_STOP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_STOP();
+^
+unity.c:566:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_PRINT_EXEC_TIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_PRINT_EXEC_TIME();
+^
+unity_internals.h:485:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStartTime;
+^
+unity_internals.h:486:0: information: Skipping configuration 'UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStopTime;
+^
+Checking unity.c: UNITY_CLOCK_MS;UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME...
+Checking unity.c: UNITY_DIFFERENTIATE_FINAL_FAIL...
+Checking unity.c: UNITY_EXCLUDE_DETAILS...
+Checking unity.c: UNITY_EXCLUDE_FLOAT...
+Checking unity.c: UNITY_EXCLUDE_FLOAT_PRINT...
+Checking unity.c: UNITY_EXCLUDE_SETJMP_H...
+unity.c:1842:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_START' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_START();
+^
+unity.c:1852:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_EXEC_TIME_STOP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_EXEC_TIME_STOP();
+^
+unity.c:566:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_PRINT_EXEC_TIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_PRINT_EXEC_TIME();
+^
+unity_internals.h:485:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStartTime;
+^
+unity_internals.h:486:0: information: Skipping configuration 'UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME' since the value of 'UNITY_TIME_TYPE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    UNITY_TIME_TYPE CurrentTestStopTime;
+^
+Checking unity.c: UNITY_EXEC_TIME_START;UNITY_EXEC_TIME_STOP;UNITY_PRINT_EXEC_TIME;UNITY_TIME_TYPE;UNITY_INCLUDE_EXEC_TIME...
+5/5 files checked 100% done
+unity.c:693:0: style: The function 'UnityAssertBits' is never used. [unusedFunction]
+
+^
+unity.c:914:0: style: The function 'UnityAssertEqualFloatArray' is never used. [unusedFunction]
+
+^
+unity.c:783:0: style: The function 'UnityAssertEqualIntArray' is never used. [unusedFunction]
+
+^
+unity.c:1512:0: style: The function 'UnityAssertEqualMemory' is never used. [unusedFunction]
+
+^
+unity.c:714:0: style: The function 'UnityAssertEqualNumber' is never used. [unusedFunction]
+
+^
+unity.c:1354:0: style: The function 'UnityAssertEqualString' is never used. [unusedFunction]
+
+^
+unity.c:1433:0: style: The function 'UnityAssertEqualStringArray' is never used. [unusedFunction]
+
+^
+unity.c:1393:0: style: The function 'UnityAssertEqualStringLen' is never used. [unusedFunction]
+
+^
+unity.c:981:0: style: The function 'UnityAssertFloatSpecial' is never used. [unusedFunction]
+
+^
+unity.c:962:0: style: The function 'UnityAssertFloatsWithin' is never used. [unusedFunction]
+
+^
+unity.c:735:0: style: The function 'UnityAssertGreaterOrLessOrEqualNumber' is never used. [unusedFunction]
+
+^
+unity.c:1234:0: style: The function 'UnityAssertNumbersArrayWithin' is never used. [unusedFunction]
+
+^
+unity.c:1187:0: style: The function 'UnityAssertNumbersWithin' is never used. [unusedFunction]
+
+^
+unity.c:1864:0: style: The function 'UnityBegin' is never used. [unusedFunction]
+
+^
+unity.c:1836:0: style: The function 'UnityDefaultTestRun' is never used. [unusedFunction]
+
+^
+unity.c:1880:0: style: The function 'UnityEnd' is never used. [unusedFunction]
+
+^
+unity.c:1767:0: style: The function 'UnityFail' is never used. [unusedFunction]
+
+^
+unity.c:1619:0: style: The function 'UnityFloatToPtr' is never used. [unusedFunction]
+
+^
+unity.c:1804:0: style: The function 'UnityIgnore' is never used. [unusedFunction]
+
+^
+unity.c:1820:0: style: The function 'UnityMessage' is never used. [unusedFunction]
+
+^
+unity.c:1593:0: style: The function 'UnityNumToPtr' is never used. [unusedFunction]
+
+^
+unity.c:1858:0: style: The function 'UnitySetTestFile' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
