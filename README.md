@@ -1,6 +1,6 @@
 # Calendar Application
 
-![icon](https://user-images.githubusercontent.com/46949702/152693733-ba48d2d2-5535-44d3-b0df-2b745fed7f2c.png)                                                          
+![icon](https://user-images.githubusercontent.com/46949702/153708755-9c37c632-5717-4102-9b98-d808e1d11fd3.jpg)                                                       
                                                                                                              
 
 
