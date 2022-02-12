@@ -114,6 +114,24 @@
 - LLR-4.2: Input option.
 - LLR-4.3: Display error if other option is choosen.
 
+## Strengths:.                                      | ## Weakness:
+* Help to keep track of upcomming events.           |* Need physical access to your tool.
+* Helps to be organised.                            |* Too many options can make simple event scheduling complicated
+* It sets boundaries for incomplete tasks.          |* Expensive
+* It keeps us accountable.                          |
+* Access anywhere, anytime without need of internet.|
+----------------------------------------------------|-------------------------------
+## Opportunites:                                    |## Threats:
+* It keeps us accountable.                          |* Calendar tools are either simple or complex.
+* Can view calendars of any year.                   |
+* Simple and effective tool.                        |
+* Day planner.                                      |
+* Easy to use.
+
+
+
+
+
 
 # SWOT Analysis
 ## Strengths:.
