@@ -27,42 +27,11 @@
 |       | LLR_04 | Count ToDos |
 
 # SWOT Analysis
-## Strengths:.
-* Help to keep track of upcomming events.
-* Helps to be organised.
-* It sets boundaries for incomplete tasks.
-* It keeps us accountable.
-* Access anywhere, anytime without need of internet.
 
-## Weakness:
-* Need physical access to your tool.
-* Too many options can make simple event scheduling complicated.
-
-## Opportunites:
-* It keeps us accountable.
-* Can view calendars of any year.
-* Simple and effective tool.
-* Day planner.
-* Easy to use.
-
-## Threats:
-* Calendar tools are either simple or complex.
-* Security Concerns.
-
+![swot](https://user-images.githubusercontent.com/46949702/156751377-da27b17a-7dad-4476-9aff-1f9ebdfd3008.png)
 
 # 5W's 1H
-* What? 
-  A calendar is an application which allows its user to access date i,e., day, month and year details.
-* Where?
-  These are usually installed on smartphones, computers and can be accessed anywhere.
-* When?
-  It cab be used offline anytime.
-* Why?
-  It is used by people to complete their tasks on time and be updated.
-* Who?
-  It is used by all people(working people,professional people,students).
-* How?
-  With certain operations, dates are calculated and displayed to users.
+![whs](https://user-images.githubusercontent.com/46949702/156751354-b83f003c-998f-4def-b5a6-c3c2bcde9e46.png)
 
 # Research
 * In recent times advancements in caledar application include location support, remainders, tasks schedulers, organise meetings.
