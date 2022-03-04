@@ -95,10 +95,10 @@
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
 |T_27| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
-|T_27| Add ToDo Item to the List| TimePass | 1.TimePass |1.TimePass| SUCCESS|
-|T_27| Add ToDo Item to the List| Walk | 1.Walk |1.Walk| SUCCESS|
-|T_27| Add ToDo Item to the List| Home Work | 1.Home Work |INVALID| FAIL|
-|T_27| Add ToDo Item to the List| Work | 1.Work |1.Work| SUCCESS|
+|T_28| Add ToDo Item to the List| TimePass | 1.TimePass |1.TimePass| SUCCESS|
+|T_29| Add ToDo Item to the List| Walk | 1.Walk |1.Walk| SUCCESS|
+|T_30| Add ToDo Item to the List| Home Work | 1.Home Work |INVALID| FAIL|
+|T_31| Add ToDo Item to the List| Work | 1.Work |1.Work| SUCCESS|
 
 # Unit Testing Analysis
 
