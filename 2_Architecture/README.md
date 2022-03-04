@@ -1,11 +1,11 @@
 # Architecture
 
 ## 1) High Level Diagram
-  Structural Design:- Data flow Diagram
+* Structural Design:- Data flow Diagram
 
 ![data flow](https://user-images.githubusercontent.com/46949702/153708757-31d92478-1279-4682-9250-2fe927ea6489.png) 
 
-  Behavioural Design:- System Flowchart
+* Behavioural Design:- System Flowchart
 
 ![OVERALL_FLOWCHART](https://user-images.githubusercontent.com/46949702/153708743-e046ba02-8cfb-4030-90d4-899c918d827a.png)
 
