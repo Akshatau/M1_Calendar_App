@@ -1,9 +1,9 @@
 # 2. Requirements
 
-# Description
+## Description
 * An application used to display calendar details which can be accessed by anyone, anywhere, anytime. It is user-friendly with added advantage of To-Do lists along with calendar.
 
-## HIGH LEVEL AND LOW LEVEL REQUIREMENTS:
+## High Level and Low Level Requirements:
 * High Level Requirement
 
 | HLR_ID | LLR_ID | Description  | 
