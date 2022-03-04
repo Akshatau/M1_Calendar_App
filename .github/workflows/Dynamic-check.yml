@@ -1,4 +1,4 @@
-name: Valgrind Analysis
+name: Dynamiccheck
 
 on:
   push:
@@ -13,8 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - name: apt install dependency
+      run: |
+        sudo apt-get -y install valgrind
+        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev   
     - name: Dynamic Analysis
-      run:  cd 3_Implementation
-            gcc calendar_main.c src/calendar.c -o valgrind.out
-    - name: valgrind 
-      run: valgrind ./valgrind.out
+      run: make dynamic_analysis -C 3_Implementation
+ 
