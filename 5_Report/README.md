@@ -19,9 +19,10 @@ Folder                   | Description
 #
 ## Batches
  
-| Code Quality | Project score | Project Quality | Build Status | Static Check |
-|------------------|-----------------------|-------------------|---------------|------------------|
-| ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c) | ![Project Score](https://api.codiga.io/project/31021/score/svg)|![Project Quality](https://api.codiga.io/project/31021/status/svg) | [![Build-linux](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Build-linux.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Build-linux.yml) | [![Cppcheck](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml)|
+| Code Quality | Project score | Project Quality | Build Status | Static Check  | Unit check|
+|------------------|-----------------------|-------------------|----------------|-------------------|--------------|
+| ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c) | ![Project Score](https://api.codiga.io/project/31021/score/svg)|![Project Quality](https://api.codiga.io/project/31021/status/svg) | [![Linux C/C++ CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml) | [![Cppcheck](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml) |[![Unit Testing - Unity](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml) |
+
 
 # 1. Certificates
 ## Course Certifications
