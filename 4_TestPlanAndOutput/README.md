@@ -53,10 +53,43 @@
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
 | T_01 | Input year in the format XXXX | XXXX | 2021 | 2021 | SUCCESS |
-| T_02 | Check if the input year is a leap year | 2016 |Days in February: 28|28| SUCCESS|
-|T_03 | Determine the weekday of first day of the year | 2015 | 4| 4| SUCCESS|
-| T_04 | For calender view | 1| Calendar XXXX| Calendar XXXX | SUCCESS|
+| T_02 | Input year in the format XXXX | XXXX | 2036 | 2036 | SUCCESS |
+| T_03 | Input year in the format XXXX | XXXX | 200 | 200 | INVALID  |
+| T_04 | Input year in the format XXXX | XXXX | 0201 | 0201 | INVALID  |
+| T_05 | Input year in the format XXXX | XXXX | 22036 | 22036 | INVALID |
+| T_05 | Input year in the format XXXX | XXXX | 1999 | 1999 | VALID |
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| T_06 | Check if the input year is a leap year | 2000 |Days in February: 28|28| SUCCESS|
+| T_07 | Check if the input year is a leap year | 1998 |Days in February: 29|29| SUCCESS|
+| T_08 | Check if the input year is a leap year | 2012 |Days in February: 28|28| SUCCESS|
+| T_09 | Check if the input year is a leap year | 3540 |Days in February: 29|29| SUCCESS|
+| T_10 | Check if the input year is a leap year | 2044 |Days in February: 28|28| SUCCESS|
+| T_11 | Check if the input year is a leap year | 2392 |Days in February: 28|28| SUCCESS|
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|T_12 | Determine the weekday of first day of the year | 2015 | 4| 4| SUCCESS|
+|T_13 | Determine the weekday of first day of the year | 2018 | 1| 1| SUCCESS|
+|T_14 | Determine the weekday of first day of the year | 2016 | 5| 5| SUCCESS|
+|T_15 | Determine the weekday of first day of the year | 2017 | 0| 0| SUCCESS|
+|T_16 | Determine the weekday of first day of the year | 2019 | 2| 2| SUCCESS|
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| T_17 | For calender view | 1| Calendar 1834| Calendar 1834 | SUCCESS|
+| T_18 | For calender view | 1| Calendar 1794| Calendar 1794 | SUCCESS|
+| T_19 | For calender view | 1| Calendar 1569| Calendar 1569 | SUCCESS|
+| T_20 | For calender view | 1| Calendar 2834| Calendar 2834 | SUCCESS|
+| T_21 | For calender view | 1| Calendar 1934| Calendar 1934 | SUCCESS|
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
 |T_05| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
 |T_06| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
 
 # Unit Testing Analysis
