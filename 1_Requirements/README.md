@@ -37,7 +37,6 @@
 ## Weakness:
 * Need physical access to your tool.
 * Too many options can make simple event scheduling complicated.
-* Expensive
 
 ## Opportunites:
 * It keeps us accountable.
@@ -48,7 +47,6 @@
 
 ## Threats:
 * Calendar tools are either simple or complex.
-* Dependent on technology.
 * Security Concerns.
 
 
