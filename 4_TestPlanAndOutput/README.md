@@ -38,18 +38,27 @@
          Exit Mode: End of execution
 
 
-## High Level Requirements:
-* HLR-1: Display of To-Do List window.
-* HLR-2: Application should be user friendly.
-* HLR_3: View To-Do List.
-* HLR-4: Create To-Do List.
-* HLR_5: Delete To-Do List.
-* HLR-6: Update To-Do List.
-* HLR_7 :Count To-Do List items.
-* LLR-8: Calender operations.
-* HLR-9: Display of calendar.
-
 # Test Plan
+* High Level Test Plan
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| T_17 | For calender view | 1| Calendar 1834| Calendar 1834 | SUCCESS|
+| T_18 | For calender view | 1| Calendar 1794| Calendar 1794 | SUCCESS|
+| T_19 | For calender view | 1| Calendar 1569| Calendar 1569 | SUCCESS|
+| T_20 | For calender view | 1| Calendar 2834| Calendar 2834 | SUCCESS|
+| T_21 | For calender view | 1| Calendar 1934| Calendar 1934 | SUCCESS|
+
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|T_22| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+|T_23| For ToDo List view|2.2| INVALID | INVALID| SUCCESS|
+|T_24| For ToDo List view|0.22|INVALID| INVALID| SUCCESS|
+|T_25| For ToDo List view|2.0| ToDo List | ToDo List| SUCCESS|
+|T_26| For ToDo List view|2.00| ToDo List | ToDo List| SUCCESS|
+
+* Low Level Test Plan 
+
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
 | T_01 | Input year in the format XXXX |2021 | 2021 | 2021 | SUCCESS |
@@ -75,22 +84,6 @@
 |T_14 | Determine the weekday of first day of the year | 2016 | 5| 5| SUCCESS|
 |T_15 | Determine the weekday of first day of the year | 2017 | 0| 0| SUCCESS|
 |T_16 | Determine the weekday of first day of the year | 2019 | 2| 2| SUCCESS|
-
-| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
-|------|---------------------------|--------|----------------|-------------|------------|
-| T_17 | For calender view | 1| Calendar 1834| Calendar 1834 | SUCCESS|
-| T_18 | For calender view | 1| Calendar 1794| Calendar 1794 | SUCCESS|
-| T_19 | For calender view | 1| Calendar 1569| Calendar 1569 | SUCCESS|
-| T_20 | For calender view | 1| Calendar 2834| Calendar 2834 | SUCCESS|
-| T_21 | For calender view | 1| Calendar 1934| Calendar 1934 | SUCCESS|
-
-| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
-|------|---------------------------|--------|----------------|-------------|------------|
-|T_22| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
-|T_23| For ToDo List view|2.2| INVALID | INVALID| SUCCESS|
-|T_24| For ToDo List view|0.22|INVALID| INVALID| SUCCESS|
-|T_25| For ToDo List view|2.0| ToDo List | ToDo List| SUCCESS|
-|T_26| For ToDo List view|2.00| ToDo List | ToDo List| SUCCESS|
 
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
