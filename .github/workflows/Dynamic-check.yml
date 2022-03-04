@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Install packages
-      run: sudo apt-get install valgrind
+      run: apt-get update
     
     - name: Dynamic Analysis
       run: make dynamic_analysis -C 3_Implementation
