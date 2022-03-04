@@ -74,7 +74,7 @@
 | HLLR_03| LLR_00 | 2017 | Returns intex of weekday when first day of a year falls|0|
 | HLLR_03| LLR_00 | 2018 | Returns intex of weekday when first day of a year falls|1|
 | HLLR_03| LLR_00 | 2019 | Returns intex of weekday when first day of a year falls|2|
-
-![image](https://user-images.githubusercontent.com/46949702/156761222-e057776e-7d84-4a98-9ff0-4e1364b94478.png)
+ * Execution:
+![UNIT](https://user-images.githubusercontent.com/46949702/156761365-4c59034a-cb32-4b3c-adcf-373405d6699c.png)
 
 
