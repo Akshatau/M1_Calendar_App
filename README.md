@@ -1,4 +1,4 @@
-# Calendar Application
+# Calendar Application with To-Do Lists
 
 ![icon](https://user-images.githubusercontent.com/46949702/153708755-9c37c632-5717-4102-9b98-d808e1d11fd3.jpg)      
 
