@@ -1,4 +1,4 @@
-name: Windows C/C++ CI
+name: Unit Testing - Unity
 
 on:
   push:
@@ -7,13 +7,11 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
 
-    runs-on: powershell
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: build
-    - run: make Run 
-    
-    
+    - name: make
+      run: make -C 3_Implementation
