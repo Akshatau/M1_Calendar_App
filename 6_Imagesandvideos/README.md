@@ -1,5 +1,5 @@
 # Execution Images
-##Platform - Visual Studio Code
+## Platform - Visual Studio Code
 1) Welcome user and diplays menu.
    User selects calendar option.
    Desired year of user's choice calendar is displayed.
