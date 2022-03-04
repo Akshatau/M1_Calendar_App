@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: gcc calendar.c -o calendar.exe
+      run: gcc calendar_main.c src/calendar.c -o calendar.exe
     - name: Run
       run: .\calendar.exe
     
