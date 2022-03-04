@@ -9,7 +9,7 @@
  * 
  */
 
-//Header Guard
+//header guard
 #ifndef CALENDAR_H_
 #define CALENDAR_H_
 
@@ -34,6 +34,7 @@ struct ToDo
  */
 int get_first_weekday(int year);
 
+//Function to return value for number of days present in th month February
 /**
  * @brief Checks whether input year is a leap year, if it is leap year it returns 29 value else 28 value indicating number of days in February
  * 
@@ -72,7 +73,7 @@ void see_ToDo();
  * @brief Create a new ToDo object which is stacked on ToDo list
  * 
  */
-void create_ToDo();  
+void create_ToDo();  //Create a new element
 
 /**
  * @brief Function used to delete elemnts from ToDo list
@@ -85,11 +86,5 @@ void delete_ToDo(); //Delete an element from ToDo
  * 
  */
 void fixcount();
-
-/**
- * @brief Used to update the ToDo list if any operations are performed like deletion or addition of any element to ToDo List
- * 
- */
-void update_ToDo();
 
 #endif

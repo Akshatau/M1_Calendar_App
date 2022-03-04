@@ -1,5 +1,5 @@
-//Include files
 #include "calendar.h"
+
 /**
  * @file calendar.c
  * @author Akshata Unkal (you@domain.com)
@@ -24,13 +24,6 @@ void update_ToDo();
 char *gets(char *str);
 
 
-//function to return the value for starting day of month of a particular year
-/**
- * @brief Get the first weekday object
- * 
- * @param year User input year
- * @return int year
- */
 int get_first_weekday(int year)
 {
   int d;
@@ -39,12 +32,7 @@ int get_first_weekday(int year)
   return d;
 }
 
-//Function to return value for number of days present in th month February
-/**
- * @brief Construct a new find leap year object
- * 
- * @param year User input year
- */
+
 int find_leap_year(int year)
 {
     int DaysInAMonth;
@@ -55,12 +43,7 @@ int find_leap_year(int year)
     return DaysInAMonth;
 }
 
-//Function for user interface
-/**
- * @brief Display the calendar view of desired year
- * 
- * @param year Input year
- */
+
 void display_calendar(int year)
 {
     int month,day,daysInMonth,weekDay=0;
@@ -90,121 +73,122 @@ void display_calendar(int year)
         if(++weekDay>6)   //supports 7 weekdays staring from 0
         {
             printf("\n");
-            weekDay=0;    
+            weekDay=0;
         }
-        startingDay=weekDay;  //Assign weekday to corresponding months
-      }
+        startingDay=weekDay;  //Assign weekday to corresponding months;
 
    }
+    }
+  
+   printf("\n-----------------------------------------------------\n");
+   printf(" !!!! THANK-YOU !!!!    \n");
 }
-
-
-/**
- * @brief 
- * 
- */
-
 
 todo *start=NULL; //first node
 
-
-
 void welcomeUser_TODO()
 {
-   system("color 5F");
    printf("\n\n");
     printf("================================================\n");
-   printf("\t       TO-DO LIST                 \n");
+   printf("\t       TO-DO LIST MENU               \n");
    printf("================================================\n");
-
-   system("pause");
 }
 
 void welcomeUser_CALENDAR(int year)
 {
-   system("color 2F");
    printf("\n\n");
-   printf("================================================\n");
+   printf("==============================================\n");
    printf("\t       CALENDAR %d                  \n",year);
-   printf("================================================\n");
+   printf("==============================================\n");
 
 }
 
-
 void see_ToDo()
 {
-   system("cls");
-   todo *temp;
+    todo *temp;
    temp=start;
-        if(start==NULL)  //No elements 
-        { 
-           printf("\nEmpty TODO\n\n");
+        if(start==NULL)  //No elements
+        {
+           printf("\nNo items in your TODO list !!!!\n");
         }
-
-       while(temp!=NULL) //Access elemnts one by one
-       { 
+        printf("\n::::::::::::::::::::::::::::::::::::: \n");
+        printf(  "        YOUR TO-DO List           \n");
+           printf("::::::::::::::::::::::::::::::::::::: \n");
+       while(temp!=NULL) //Access; elemnts one by one
+       {
           printf("%d)",temp->count);
           puts(temp->data);
           fflush(stdin);
           temp=temp->link;
        }
-       printf("\n\n\n");
-       system("pause");
+          printf("::::::::::::::::::::::::::::::::::::: \n");
+       printf("\n\n");
    }
 
 void create_ToDo()  //Create a new element
 {
     char k;
     todo *t,*temp;
-    system("cls");
     while(1){
-        printf("\nWant to add? Y/N\n");
-        //fflush(stdin);
-        scanf("%c",&k);
-        if(k=='N')     //If user wishes not to add element to ToDo
+     
+        printf("Do want to ADD ToDos? {y/n} : \n");
+       k=getchar();
+       scanf(" %c",&k);
+       if(k=='N' || k=='n')     //If user wishes not to add element to ToDo
             break;
-       else
+      else if(k=='Y' || k=='y')
        {
         if(start==NULL)  //list is empty
         {
         t=(todo *)calloc(1,sizeof(todo));
         start=t;
-        printf("\nADD it..\n"); //Message display
+        printf("\nADD item : "); //Message display
         fflush(stdin);
-        scanf("%s",t->data);
+        scanf("%s",(t->data));
         t->count=1;
         start->link=NULL;
+        printf("\nADDED SUCCESSFUL... \n");
        }
-       else{
+       else
+       {
        temp=(todo *)calloc(1,sizeof(todo));
-       printf("\nADD it..\n");
+       printf("\nADD item : "); //Message display
        fflush(stdin);
-        scanf("%s",temp->data);
+       scanf("%s",(temp->data));
        temp->link=NULL;
-       t->link=temp;
-       t=t->link;
-     }
-     fixcount();
+        t=start;
+      while(t->link!=NULL){
+        t=t->link;
+      }
+      t->link=temp;
+       printf("\nADDED SUCCESSFUL... \n");
+       }
+        fixcount();
+      }
+        else{
+          printf("INVALID CHOICE !!!\n");
+           break;
+           }
     }
-   }
 }
 
 void delete_ToDo() //Delete an element from ToDo
 {
-  system("cls");
   int d;
   todo *temp1,*temp;
-  printf("\nEnter the no of the todo you want to remove\n");
+  
+  printf("\nEnter the no. of the Todo you want to remove : ");
   scanf("%d",&d);
   temp1=start;
   temp=start->link;
   while(1){
-  if(temp1->count==d){
+  if(temp1->count==d)
+    {
     start=start->link;
     free(temp1);
     fixcount();
     break;
-  }
+    }
     if(temp->count==d)
     {
         temp1->link=temp->link;
@@ -217,12 +201,13 @@ void delete_ToDo() //Delete an element from ToDo
         temp=temp->link;
     }
 }
-system("pause");
+ printf("Your ToDo is deleted...\n");
 }
 
 void fixcount()
 {
   todo *temp;
+  //todo *start=NULL; //first node
   int i=1;
   temp=start;
   while(temp!=NULL)
@@ -232,33 +217,4 @@ void fixcount()
     temp=temp->link;
   }
 
-}
-
-void update_ToDo()
-{
-  system("cls");
-  todo *temp,*t;
-  char k;
-  while(1)
-    {
-        printf("\nWant to add?y/n\n");
-        fflush(stdin);
-        scanf("%c",&k);
-        if(k=='n')
-            break;
-       printf("\nADD it..\n");
-       temp=(todo *)calloc(1,sizeof(todo));
-       fflush(stdin);
-        scanf("%s",temp->data);
-       temp->link=NULL;
-       t=start;
-      while(t->link!=NULL)
-      {
-        t=t->link;
-      }
-      t->link=temp;
-      fixcount();
-    }
-printf("\n\n");
-system("pause");
 }
