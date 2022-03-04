@@ -1,4 +1,4 @@
-name: Windows C/C++ CI
+name: Makefile CI
 
 on:
   push:
@@ -13,7 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: build
-    - run: make Run -C 3_Implementaion/
     
-    
+      
+    - name: Install dependencies
+      run: make build -C 3_Implementation/
+      
+   

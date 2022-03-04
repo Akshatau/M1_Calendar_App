@@ -1,4 +1,4 @@
-# Calendar Application
+# Calendar Application with To-Do Lists
 
 ![icon](https://user-images.githubusercontent.com/46949702/153708755-9c37c632-5717-4102-9b98-d808e1d11fd3.jpg)      
 
@@ -19,8 +19,8 @@ Folder                   | Description
 #
 ## Batches
  
-| Code Quality | Project score | Project Quality | Build Status | Static Check  | Unit check|
-|------------------|-----------------------|-------------------|----------------|-------------------|--------------|
-| ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c) | ![Project Score](https://api.codiga.io/project/31021/score/svg)|![Project Quality](https://api.codiga.io/project/31021/status/svg) | [![Linux C/C++ CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml) | [![Cppcheck](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml) |[![Unit Testing - Unity](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml) |
+| Code Quality | Project score | Project Quality | Build Status | Static Check  | Unit check| Build project with Make|
+|------------------|-----------------------|-------------------|----------------|-------------------|-------|-------|
+| ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c) | ![Project Score](https://api.codiga.io/project/31021/score/svg)|![Project Quality](https://api.codiga.io/project/31021/status/svg) | [![Linux C/C++ CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml) | [![Cppcheck](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml) |[![Unit Testing - Unity](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml) |[![Makefile CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/makefile.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/makefile.yml)|
 
 

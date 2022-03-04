@@ -1,4 +1,4 @@
-# Calendar Application
+# Calendar Application with To-Do Lists
 
 ![icon](https://user-images.githubusercontent.com/46949702/153708755-9c37c632-5717-4102-9b98-d808e1d11fd3.jpg)      
 
@@ -18,10 +18,9 @@ Folder                   | Description
 
 #
 ## Batches
- 
-| Code Quality | Project score | Project Quality | Build Status | Static Check  | Unit check|
-|------------------|-----------------------|-------------------|----------------|-------------------|--------------|
-| ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c) | ![Project Score](https://api.codiga.io/project/31021/score/svg)|![Project Quality](https://api.codiga.io/project/31021/status/svg) | [![Linux C/C++ CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml) | [![Cppcheck](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml) |[![Unit Testing - Unity](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml) |
+| Code Quality | Project score | Project Quality | Build Status | Static Check  | Unit check| Build project with Make|
+|------------------|-----------------------|-------------------|----------------|-------------------|-------|-------|
+| ![Code Quality](https://app.codacy.com/project/badge/Grade/8d21a69de0ea47388972f0c781df0a2c) | ![Project Score](https://api.codiga.io/project/31021/score/svg)|![Project Quality](https://api.codiga.io/project/31021/status/svg) | [![Linux C/C++ CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Linux_c-cpp.yml) | [![Cppcheck](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/Static-check.yml) |[![Unit Testing - Unity](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/unity.yml) |[![Makefile CI](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/makefile.yml/badge.svg)](https://github.com/Akshatau/M1_Calendar_App/actions/workflows/makefile.yml)|
 
 
 # 1. Certificates
@@ -49,123 +48,43 @@ Folder                   | Description
 
 # 2. Requirements
 
-# Description
+## Description
 * An application used to display calendar details which can be accessed by anyone, anywhere, anytime. It is user-friendly with added advantage of To-Do lists along with calendar.
 
-## HIGH LEVEL AND LOW LEVEL REQUIREMENTS:
-* HLR : High Level Requirement
-* LLR : Low Level Requirement
+## Defining Features 
+* It support provide calendar and ToDo list facility without internet.
+* Program should be simple and user friendly.
+* It should be accessible to everyone, anywhere and anythime.
+
+## High Level and Low Level Requirements:
+* High Level Requirement
 
 | HLR_ID | LLR_ID | Description  | 
 |----------|-------------|------------------------------|
-| HLR_01 | LLR_00| Display of calendar |  
-| HLR_01 | LLR_01| Change the colour of window to make your page appealing |  
-| HLR_01 | LLR_02| Fetch input from the users about year |  
-| HLR_01 | LLR_03| Print the headings of calendar with year along with borders | 
-| HLR_01 | LLR_04| Print the heading of weekdays of month |
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_02 | LLR_00 | Determine whether input year is a leap year or not | 
-| HLR_02 | LLR_01 | Usage of appropriate formulas to find leap year |
-| HLR_02 | LLR_02 | According to input year is leap year or not return the number of days in month February |
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_03 | LLR_00 | Locate first day of the year falls on which day |
-| HLR_03 | LLR_01 | Usage of formula to find when is first day of year|
-|        |         |                                            | 
-|        |         |                                            | 
-| HLR_04 |LLR_00 | Calender operations|
-| HLR_04 |LLR_01 | Change the colour of window to make your page appealing|
-| HLR_04 |LLR_02 | Display menu|
-| HLR_04 |LLR_03 | Fetch option from the users from a menu|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_05 | LLR_00| Display of To-Do List window|
-| HLR_05 | LLR_01| Clear window|
-| HLR_05 | LLR_02| Start to display from first To-Do list item|
-| HLR_05 | LLR_03| Access one by one elements and diplay upto last element of list|
-| HLR_05 | LLR_04| Print message as Empty when there are no elements in List|
-|        |         |                                            | 
-|        |         |                                            | 
-| HLR_06 | LLR_00| View To-Do List Items|
-| HLR_06 | LLR_01| Clear window|
-| HLR_06 | LLR_02| Confirm addition of an element to lists|
-| HLR_06 | LLR_03 |Access one by one elements and diplay upto last element of list|
-| HLR_06 | LLR_03| Print message as Empty when there are no elements in List|
-|        |         |                                            |
-|        |         |                                            | 
-| HLR_07 | LLR_00| Create To-Do List Items|
-| HLR_07 | LLR_01| Clear window|
-| HLR_07 | LLR_02| Start to display from first To-Do list item|
-| HLR_07 | LLR_03| Confirm addition of an element to lists|
-| HLR_07 | LLR_04|Create some memory for new element|
-| HLR_07 | LLR_05| Addition of elements should be one after the other with first come preferance|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_08 | LLR_00| Delete To-Do List|
-| HLR_08 | LLR_01| Clear window|
-| HLR_08 | LLR_02|  Confirm deletion of an element from lists|
-| HLR_08 | LLR_03| Free some memory if element is deleted from list|
-| HLR_08 | LLR_04| Deletion of an element from list is impposible when list is empty|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_09 | LLR_00 |Update To-Do List|
-| HLR_09 | LLR_01 |Update list with items if any operation like adiition or deletion of items fom list is performed|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_10 | LLR_02 |Count To-Do List items|
-| HLR_10 | LLR_03 |For addition of task operation, increase task count by one|
-| HLR_10 | LLR_04 |For deletion of task operation, decrease task count by one
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_11 | LLR_00 |Application should be user friendly|
-| HLR_11 | LLR_01 |Clear window|
-| HLR_11 | LLR_02 |Change the colour of window to make your page appealing|
-| HLR_11 | LLR_03 |Access input from user to switch to calendar mode or To-Do List mode|
-| HLR_11 | LLR_04 |Input option|
-| HLR_11 | LLR_05 |Display error if other option is choosen|
+|   HLR_01  |       |      Calendar     |
+|  HLR_02   |       |     To-Do List      |
 
+* Low Level Requirement
 
+| HLR_ID | LLR_ID | Description  | 
+|----------|-------------|------------------------------|
+|   HLR_01  |       |      Calendar view    |
+|       | LLR_01 |   Check for leap year  |
+|       | LLR_01 | User input year has to be a four digits |
+|       | LLR_02 | Find the first weekday of the year |
+|      | LLR_03 | Display calendar of 12 months |
+|  HLR_02   |       |     To-Do List view      |
+|         | LLR_01 | Add ToDos |
+|        | LLR_02 | Delete ToDos |
+|       | LLR_03 | Display ToDos |
+|       | LLR_04 | Count ToDos |
 
-# SWOT Analysis
-## Strengths:.
-* Help to keep track of upcomming events.
-* Helps to be organised.
-* It sets boundaries for incomplete tasks.
-* It keeps us accountable.
-* Access anywhere, anytime without need of internet.
+## SWOT Analysis
 
-## Weakness:
-* Need physical access to your tool.
-* Too many options can make simple event scheduling complicated.
-* Expensive
+![swot](https://user-images.githubusercontent.com/46949702/156751377-da27b17a-7dad-4476-9aff-1f9ebdfd3008.png)
 
-## Opportunites:
-* It keeps us accountable.
-* Can view calendars of any year.
-* Simple and effective tool.
-* Day planner.
-* Easy to use.
-
-## Threats:
-* Calendar tools are either simple or complex.
-* Dependent on technology.
-* Security Concerns.
-
-
-# 5W's 1H
-* What? 
-  A calendar is an application which allows its user to access date i,e., day, month and year details.
-* Where?
-  These are usually installed on smartphones, computers and can be accessed anywhere.
-* When?
-  It cab be used offline anytime.
-* Why?
-  It is used by people to complete their tasks on time and be updated.
-* Who?
-  It is used by all people(working people,professional people,students).
-* How?
-  With certain operations, dates are calculated and displayed to users.
+## 5W's 1H
+![whs](https://user-images.githubusercontent.com/46949702/156751354-b83f003c-998f-4def-b5a6-c3c2bcde9e46.png)
 
 ## Research
 * In recent times advancements in caledar application include location support, remainders, tasks schedulers, organise meetings.
@@ -173,21 +92,33 @@ Folder                   | Description
 
 # Architecture
 
-## Structural Design and Behavioural Design
-## a) System Flowchart
+## 1) High Level Diagram
+* Structural Design:- Functional Diagram
+
+![hll disgram](https://user-images.githubusercontent.com/46949702/156751375-424b16c3-b4a1-4746-83b2-3e94619ede61.png)
+
+* Structural Design:- Data flow Diagram
+
+![data flow](https://user-images.githubusercontent.com/46949702/153708757-31d92478-1279-4682-9250-2fe927ea6489.png) 
+
+* Behavioural Design:- System Flowchart
+
 ![OVERALL_FLOWCHART](https://user-images.githubusercontent.com/46949702/153708743-e046ba02-8cfb-4030-90d4-899c918d827a.png)
-#
-## b) Functional Diagram
+
+## 2) Low Level Diagram
+* Structural Design:- Functional Diagram (To-Do List System)
+
 ![functional diagram](https://user-images.githubusercontent.com/46949702/153708758-fc0476f5-779a-47fd-91ec-87ba23ce6c02.png)
-#
-## C) Use case Diagram
-![use case diagram](https://user-images.githubusercontent.com/46949702/152684207-1062d514-217e-4df2-b1f4-893374380720.png)
-#
-## d) Data flow Diagram
-![data flow](https://user-images.githubusercontent.com/46949702/153708757-31d92478-1279-4682-9250-2fe927ea6489.png)
-#
-## e) Behavioural Diagram
+* Behavioural Design:- Use Case Diagram (To-Do List System)
+
 ![USE CASE DIAGRAM](https://user-images.githubusercontent.com/46949702/153708737-e53f4004-9620-40e9-bc92-a0b685345b2f.png)
+* Behavioural Design:- UML Diagram (Calendar System)
+
+![uml](https://user-images.githubusercontent.com/46949702/156751381-3d66f482-6ea2-4323-9fe8-312628636818.png)
+
+
+
+
 
 ## Folder Structure
 Folder          | Description
@@ -198,7 +129,7 @@ Folder          | Description
 `test`          | All source code and data for testing purposes
 `unity`         | Files for unit testing
 
-# Test Plan
+# Test Plan Flow
 1. Welcome user with greetings.
 2. Diplay menu
     1. Calendar 
@@ -215,7 +146,6 @@ Folder          | Description
     a) View 
     b) Create
     c) Delete 
-    d) Update 
     e) Exit 
 8. Fetch choice.
 
@@ -233,62 +163,123 @@ Folder          | Description
    - Confirm deletion of item or exit to menu.
    - Delete existing item if any present.
    - Back to menu.
-
-    d) Update:
-   - If any operations like add or delete was performed then update list.
-   - Back to menu.
-
-    e) Exit
+   
+    d) Exit
   
          Exit Mode: End of execution
 
-# Test Outcome
-a) Menu inputs 
-1. Calendar  
-2. ToDo List  
-3. Exit
-- Accepted inputs: 1,2,3
-- Error Message: any other choice
 
-b) Menu inputs of ToDo List.
-1) View ;
-2) Create 
-3) Delete 
-4) Update 
-5) Exit )
--Accepted inputs: 1,2,3,4,5
--Error Message: any other option
+# Test Plan
+* High Level Test Plan
 
-c) Deletion of ToDo Lists.
--Error message when no items are in list
+| High Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| HLT_1 | For calender view | 1| Calendar 1834| Calendar 1834 | SUCCESS|
+| HLT_2 | For calender view | 1| Calendar 1794| Calendar 1794 | SUCCESS|
+| HLT_3 | For calender view | 1| Calendar 1569| Calendar 1569 | SUCCESS|
+| HLT_4 | For calender view | 1| Calendar 2834| Calendar 2834 | SUCCESS|
+| HLT_5 | For calender view | 1| Calendar 1934| Calendar 1934 | SUCCESS|
 
-## High Level Requirements:
-* HLR-1: Display of To-Do List window.
-* HLR-2: Application should be user friendly.
-* HLR_3: View To-Do List.
-* HLR-4: Create To-Do List.
-* HLR_5: Delete To-Do List.
-* HLR-6: Update To-Do List.
-* HLR_7 :Count To-Do List items.
-* LLR-8: Calender operations.
-* HLR-9: Display of calendar.
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|HLT_6| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+|HLT_7| For ToDo List view|2.2| INVALID | INVALID| SUCCESS|
+|HLT_8| For ToDo List view|0.22|INVALID| INVALID| SUCCESS|
+|HLT_9| For ToDo List view|2.0| ToDo List | ToDo List| SUCCESS|
+|HLT_10| For ToDo List view|2.00| ToDo List | ToDo List| SUCCESS|
+#
+* Low Level Test Plan 
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| LLT_01 | Input year in the format XXXX |2021 | 2021 | 2021 | SUCCESS |
+| LLT_02 | Input year in the format XXXX | 2036 | 2036 | 2036 | SUCCESS |
+| LLT_03 | Input year in the format XXXX | 200 | 200 | INVALID  | SUCCESS  |
+| LLT_04 | Input year in the format XXXX | 0201 | 0201 | INVALID |SUCCESS |
+| LLT_05 | Input year in the format XXXX | 22036| 22036 | INVALID | SUCCESS |
+| LLT_05 | Input year in the format XXXX |1999 | 1999 | 1999 | SUCCESS |
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| LLT_06 | Check if the input year is a leap year | 2000 |Days in February: 28|28| SUCCESS|
+| LLT_07 | Check if the input year is a leap year | 1998 |Days in February: 29|29| SUCCESS|
+| LLT_08 | Check if the input year is a leap year | 2012 |Days in February: 28|28| SUCCESS|
+| LLT_09 | Check if the input year is a leap year | 3540 |Days in February: 29|29| SUCCESS|
+| LLT_10 | Check if the input year is a leap year | 2044 |Days in February: 28|28| SUCCESS|
+| LLT_11 | Check if the input year is a leap year | 2392 |Days in February: 28|28| SUCCESS|
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|LLT_12 | Determine the weekday of first day of the year | 2015 | 4| 4| SUCCESS|
+|LLT_13 | Determine the weekday of first day of the year | 2018 | 1| 1| SUCCESS|
+|LLT_14 | Determine the weekday of first day of the year | 2016 | 5| 5| SUCCESS|
+|LLT_15 | Determine the weekday of first day of the year | 2017 | 0| 0| SUCCESS|
+|LLT_16 | Determine the weekday of first day of the year | 2019 | 2| 2| SUCCESS|
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|LLT_17| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
+|LLT_18| Add ToDo Item to the List| TimePass | 1.TimePass |1.TimePass| SUCCESS|
+|LLT_19| Add ToDo Item to the List| Walk | 1.Walk |1.Walk| SUCCESS|
+|LLT_20| Add ToDo Item to the List| Home Work | 1.Home Work |INVALID| FAIL|
+|LLT_21| Add ToDo Item to the List| Work | 1.Work |1.Work| SUCCESS|
+
+# Unit Testing Analysis
+
+| HLL_ID | LLR_ID | Input | Description|Expected output|
+|--------|-----------|------|-----------------|------|
+| HLL_01 | LLR_02 | 2016 | Decides whether year is leap or not and returns number of days in february|29|
+| HLLR_02 | LLR_02 | 2021 | Returns number of days in february | 28|
+| HLLR_02 | LLR_02 | 2016 | Returns number of days in february | 29|
+| HLLR_02 | LLR_02 | 2020 | Returns number of days in february |29|
+| HLLR_02 | LLR_02 | 2022 | Returns number of days in february | 28|
+| HLLR_02 | LLR_02 | 2023 | Returns number of days in february | 28|
+| HLLR_03| LLR_00 | 2015 | Returns intex of weekday when first day of a year falls|4|
+| HLLR_03| LLR_00 | 2016 | Returns intex of weekday when first day of a year falls|5|
+| HLLR_03| LLR_00 | 2017 | Returns intex of weekday when first day of a year falls|0|
+| HLLR_03| LLR_00 | 2018 | Returns intex of weekday when first day of a year falls|1|
+| HLLR_03| LLR_00 | 2019 | Returns intex of weekday when first day of a year falls|2|
+ * Execution:
+![UNIT](https://user-images.githubusercontent.com/46949702/156761365-4c59034a-cb32-4b3c-adcf-373405d6699c.png)
+
+
+
+
 
 # Execution Images
-##Platform - Visual Studio Code
-1) Welcome user and diplays menu
-![2](https://user-images.githubusercontent.com/46949702/153710546-d12353d7-9a95-4621-b635-adbd0813a8fc.png)
+## Platform - Visual Studio Code
+1) * Welcome user and diplays menu.
+   * User selects calendar option.
+   * Desired year of user's choice calendar is displayed monthly wise.(For example year=2021)
+![11](https://user-images.githubusercontent.com/46949702/156740258-30faab49-6145-47cd-a68e-06a388c30ea6.png)
+![22](https://user-images.githubusercontent.com/46949702/156740261-678b6cdc-c080-43d7-afff-d376029e73ba.png)
+![33](https://user-images.githubusercontent.com/46949702/156740264-43e3ca95-188a-4094-97d8-e93be0a07dc3.png)
+![44](https://user-images.githubusercontent.com/46949702/156740267-e20ecd46-5ef8-475e-9d20-8f1446b76d56.png)
 #
-2)
-![1](https://user-images.githubusercontent.com/46949702/153710557-364de34e-7f29-4d0c-990f-aa25855addd6.png)
+2) * Welcome user and diplays menu.
+   * User selects ToDo List option.
+   * User decides to display List.
+   * At start the list is empty message is displayed.
+![55](https://user-images.githubusercontent.com/46949702/156740231-8e73524f-5517-4ff9-bed3-484ebd8da765.png)
 #
-![3](https://user-images.githubusercontent.com/46949702/153710550-af33cf9c-0eb5-45c7-b13c-582966b949a1.png)
+3) * Again ToDo List Menu operations is displayed
+   * User selects to add items to list and successfully adds 3 items to list.
+![66](https://user-images.githubusercontent.com/46949702/156740241-6906714d-37cd-45fc-ab65-3e17d4b7ca4b.png)
 #
-![4](https://user-images.githubusercontent.com/46949702/153710553-7e1754e1-bb0c-4f30-a329-4dec99182570.png)
+4) * User selects TO-DO  from menu list to view elements of list.
+   * User selects to delete items from list(i.e., entry no.2)  
+![77](https://user-images.githubusercontent.com/46949702/156740244-3837d4f8-4806-41e1-b21c-3bebe225464b.png)
 #
-![5](https://user-images.githubusercontent.com/46949702/153710555-56985aeb-599d-475c-ba96-18badc3cf89b.png)
+5) * After deletion operation   
+ ![88](https://user-images.githubusercontent.com/46949702/156740246-1aa8b98f-9f05-441b-8667-da9361f4e9ab.png)
 #
-![6](https://user-images.githubusercontent.com/46949702/153710556-f0bfa10a-bb51-4ffd-8c4e-393f3e7578f7.png)
+6) * User select to add item to list(entry no.3)
+![99](https://user-images.githubusercontent.com/46949702/156740249-684ee5dd-f146-4a2c-aee6-14e9b7a3d7ca.png)
 #
+7) * User selects to quit
+![1010](https://user-images.githubusercontent.com/46949702/156740252-d502a58c-2b73-4266-85c2-117abefd4114.png)
+#
+
 
 # References
 * https://developpaper.com/c-language-to-realize-the-perpetual-calendar-applet/

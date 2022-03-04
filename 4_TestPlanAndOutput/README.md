@@ -15,7 +15,6 @@
     a) View 
     b) Create
     c) Delete 
-    d) Update 
     e) Exit 
 8. Fetch choice.
 
@@ -33,36 +32,67 @@
    - Confirm deletion of item or exit to menu.
    - Delete existing item if any present.
    - Back to menu.
-
-    d) Update:
-   - If any operations like add or delete was performed then update list.
-   - Back to menu.
-
-    e) Exit
+   
+    d) Exit
   
          Exit Mode: End of execution
 
 
-## High Level Requirements:
-* HLR-1: Display of To-Do List window.
-* HLR-2: Application should be user friendly.
-* HLR_3: View To-Do List.
-* HLR-4: Create To-Do List.
-* HLR_5: Delete To-Do List.
-* HLR-6: Update To-Do List.
-* HLR_7 :Count To-Do List items.
-* LLR-8: Calender operations.
-* HLR-9: Display of calendar.
-
 # Test Plan
+* High Level Test Plan
+
+| High Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| HLT_1 | For calender view | 1| Calendar 1834| Calendar 1834 | SUCCESS|
+| HLT_2 | For calender view | 1| Calendar 1794| Calendar 1794 | SUCCESS|
+| HLT_3 | For calender view | 1| Calendar 1569| Calendar 1569 | SUCCESS|
+| HLT_4 | For calender view | 1| Calendar 2834| Calendar 2834 | SUCCESS|
+| HLT_5 | For calender view | 1| Calendar 1934| Calendar 1934 | SUCCESS|
+
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
-| T_01 | Input year in the format XXXX | XXXX | 2021 | 2021 | SUCCESS |
-| T_02 | Check if the input year is a leap year | 2016 |Days in February: 28|28| SUCCESS|
-|T_03 | Determine the weekday of first day of the year | 2015 | 4| 4| SUCCESS|
-| T_04 | For calender view | 1| Calendar XXXX| Calendar XXXX | SUCCESS|
-|T_05| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
-|T_06| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
+|HLT_6| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+|HLT_7| For ToDo List view|2.2| INVALID | INVALID| SUCCESS|
+|HLT_8| For ToDo List view|0.22|INVALID| INVALID| SUCCESS|
+|HLT_9| For ToDo List view|2.0| ToDo List | ToDo List| SUCCESS|
+|HLT_10| For ToDo List view|2.00| ToDo List | ToDo List| SUCCESS|
+
+
+* Low Level Test Plan 
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| LLT_01 | Input year in the format XXXX |2021 | 2021 | 2021 | SUCCESS |
+| LLT_02 | Input year in the format XXXX | 2036 | 2036 | 2036 | SUCCESS |
+| LLT_03 | Input year in the format XXXX | 200 | 200 | INVALID  | SUCCESS  |
+| LLT_04 | Input year in the format XXXX | 0201 | 0201 | INVALID |SUCCESS |
+| LLT_05 | Input year in the format XXXX | 22036| 22036 | INVALID | SUCCESS |
+| LLT_05 | Input year in the format XXXX |1999 | 1999 | 1999 | SUCCESS |
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| LLT_06 | Check if the input year is a leap year | 2000 |Days in February: 28|28| SUCCESS|
+| LLT_07 | Check if the input year is a leap year | 1998 |Days in February: 29|29| SUCCESS|
+| LLT_08 | Check if the input year is a leap year | 2012 |Days in February: 28|28| SUCCESS|
+| LLT_09 | Check if the input year is a leap year | 3540 |Days in February: 29|29| SUCCESS|
+| LLT_10 | Check if the input year is a leap year | 2044 |Days in February: 28|28| SUCCESS|
+| LLT_11 | Check if the input year is a leap year | 2392 |Days in February: 28|28| SUCCESS|
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|LLT_12 | Determine the weekday of first day of the year | 2015 | 4| 4| SUCCESS|
+|LLT_13 | Determine the weekday of first day of the year | 2018 | 1| 1| SUCCESS|
+|LLT_14 | Determine the weekday of first day of the year | 2016 | 5| 5| SUCCESS|
+|LLT_15 | Determine the weekday of first day of the year | 2017 | 0| 0| SUCCESS|
+|LLT_16 | Determine the weekday of first day of the year | 2019 | 2| 2| SUCCESS|
+
+| Low Level Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+|LLT_17| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
+|LLT_18| Add ToDo Item to the List| TimePass | 1.TimePass |1.TimePass| SUCCESS|
+|LLT_19| Add ToDo Item to the List| Walk | 1.Walk |1.Walk| SUCCESS|
+|LLT_20| Add ToDo Item to the List| Home Work | 1.Home Work |INVALID| FAIL|
+|LLT_21| Add ToDo Item to the List| Work | 1.Work |1.Work| SUCCESS|
 
 # Unit Testing Analysis
 
@@ -79,4 +109,7 @@
 | HLLR_03| LLR_00 | 2017 | Returns intex of weekday when first day of a year falls|0|
 | HLLR_03| LLR_00 | 2018 | Returns intex of weekday when first day of a year falls|1|
 | HLLR_03| LLR_00 | 2019 | Returns intex of weekday when first day of a year falls|2|
+ * Execution:
+![UNIT](https://user-images.githubusercontent.com/46949702/156761365-4c59034a-cb32-4b3c-adcf-373405d6699c.png)
+
 
