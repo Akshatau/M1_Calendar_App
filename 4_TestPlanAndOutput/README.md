@@ -1,4 +1,4 @@
-# Test Plan
+# Test Plan Flow
 1. Welcome user with greetings.
 2. Diplay menu
     1. Calendar 
@@ -42,25 +42,6 @@
   
          Exit Mode: End of execution
 
-# Test Outcome
-a) Menu inputs 
-1. Calendar  
-2. ToDo List  
-3. Exit
-- Accepted inputs: 1,2,3
-- Error Message: any other choice
-
-b) Menu inputs of ToDo List.
-1) View ;
-2) Create 
-3) Delete 
-4) Update 
-5) Exit )
--Accepted inputs: 1,2,3,4,5
--Error Message: any other option
-
-c) Deletion of ToDo Lists.
--Error message when no items are in list
 
 ## High Level Requirements:
 * HLR-1: Display of To-Do List window.
@@ -73,7 +54,17 @@ c) Deletion of ToDo Lists.
 * LLR-8: Calender operations.
 * HLR-9: Display of calendar.
 
-# Test Code Analysis
+# Test Plan
+| Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
+|------|---------------------------|--------|----------------|-------------|------------|
+| T_01 | Input year in the format XXXX | XXXX | 2021 | 2021 | SUCCESS |
+| T_02 | Check if the input year is a leap year | 2016 |Days in February: 28|28| SUCCESS|
+|T_03 | Determine the weekday of first day of the year | 2015 | 4| 4| SUCCESS|
+| T_04 | For calender view | 1| Calendar XXXX| Calendar XXXX | SUCCESS|
+|T_05| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+|T_06| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
+
+# Unit Testing Analysis
 
 | HLL_ID | LLR_ID | Input | Description|Expected output|
 |--------|-----------|------|-----------------|------|
@@ -88,7 +79,4 @@ c) Deletion of ToDo Lists.
 | HLLR_03| LLR_00 | 2017 | Returns intex of weekday when first day of a year falls|0|
 | HLLR_03| LLR_00 | 2018 | Returns intex of weekday when first day of a year falls|1|
 | HLLR_03| LLR_00 | 2019 | Returns intex of weekday when first day of a year falls|2|
-
-
-
 
