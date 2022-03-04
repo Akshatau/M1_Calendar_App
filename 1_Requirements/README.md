@@ -4,79 +4,27 @@
 * An application used to display calendar details which can be accessed by anyone, anywhere, anytime. It is user-friendly with added advantage of To-Do lists along with calendar.
 
 ## HIGH LEVEL AND LOW LEVEL REQUIREMENTS:
-* HLR : High Level Requirement
-* LLR : Low Level Requirement
+* High Level Requirement
 
 | HLR_ID | LLR_ID | Description  | 
 |----------|-------------|------------------------------|
-| HLR_01 | LLR_00| Display of calendar |  
-| HLR_01 | LLR_01| Change the colour of window to make your page appealing |  
-| HLR_01 | LLR_02| Fetch input from the users about year |  
-| HLR_01 | LLR_03| Print the headings of calendar with year along with borders | 
-| HLR_01 | LLR_04| Print the heading of weekdays of month |
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_02 | LLR_00 | Determine whether input year is a leap year or not | 
-| HLR_02 | LLR_01 | Usage of appropriate formulas to find leap year |
-| HLR_02 | LLR_02 | According to input year is leap year or not return the number of days in month February |
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_03 | LLR_00 | Locate first day of the year falls on which day |
-| HLR_03 | LLR_01 | Usage of formula to find when is first day of year|
-|        |         |                                            | 
-|        |         |                                            | 
-| HLR_04 |LLR_00 | Calender operations|
-| HLR_04 |LLR_01 | Change the colour of window to make your page appealing|
-| HLR_04 |LLR_02 | Display menu|
-| HLR_04 |LLR_03 | Fetch option from the users from a menu|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_05 | LLR_00| Display of To-Do List window|
-| HLR_05 | LLR_01| Clear window|
-| HLR_05 | LLR_02| Start to display from first To-Do list item|
-| HLR_05 | LLR_03| Access one by one elements and diplay upto last element of list|
-| HLR_05 | LLR_04| Print message as Empty when there are no elements in List|
-|        |         |                                            | 
-|        |         |                                            | 
-| HLR_06 | LLR_00| View To-Do List Items|
-| HLR_06 | LLR_01| Clear window|
-| HLR_06 | LLR_02| Confirm addition of an element to lists|
-| HLR_06 | LLR_03 |Access one by one elements and diplay upto last element of list|
-| HLR_06 | LLR_03| Print message as Empty when there are no elements in List|
-|        |         |                                            |
-|        |         |                                            | 
-| HLR_07 | LLR_00| Create To-Do List Items|
-| HLR_07 | LLR_01| Clear window|
-| HLR_07 | LLR_02| Start to display from first To-Do list item|
-| HLR_07 | LLR_03| Confirm addition of an element to lists|
-| HLR_07 | LLR_04|Create some memory for new element|
-| HLR_07 | LLR_05| Addition of elements should be one after the other with first come preferance|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_08 | LLR_00| Delete To-Do List|
-| HLR_08 | LLR_01| Clear window|
-| HLR_08 | LLR_02|  Confirm deletion of an element from lists|
-| HLR_08 | LLR_03| Free some memory if element is deleted from list|
-| HLR_08 | LLR_04| Deletion of an element from list is impposible when list is empty|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_09 | LLR_00 |Update To-Do List|
-| HLR_09 | LLR_01 |Update list with items if any operation like adiition or deletion of items fom list is performed|
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_10 | LLR_02 |Count To-Do List items|
-| HLR_10 | LLR_03 |For addition of task operation, increase task count by one|
-| HLR_10 | LLR_04 |For deletion of task operation, decrease task count by one
-|        |         |                                            | 
-|        |         |                                            |
-| HLR_11 | LLR_00 |Application should be user friendly|
-| HLR_11 | LLR_01 |Clear window|
-| HLR_11 | LLR_02 |Change the colour of window to make your page appealing|
-| HLR_11 | LLR_03 |Access input from user to switch to calendar mode or To-Do List mode|
-| HLR_11 | LLR_04 |Input option|
-| HLR_11 | LLR_05 |Display error if other option is choosen|
+|   HLR_01  |       |      Calendar     |
+|  HLR_02   |       |     To-Do List      |
 
+* Low Level Requirement
 
+| HLR_ID | LLR_ID | Description  | 
+|----------|-------------|------------------------------|
+|   HLR_01  |       |      Calendar view    |
+|       | LLR_01 |   Check for leap year  |
+|       | LLR_01 | User input year has to be a four digits |
+|       | LLR_02 | Find the first weekday of the year |
+|      | LLR_03 | Display calendar of 12 months |
+|  HLR_02   |       |     To-Do List view      |
+|         | LLR_01 | Add ToDos |
+|        | LLR_02 | Delete ToDos |
+|       | LLR_03 | Display ToDos |
+|       | LLR_04 | Count ToDos |
 
 # SWOT Analysis
 ## Strengths:.
