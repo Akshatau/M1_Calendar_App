@@ -3,6 +3,11 @@
 ## Description
 * An application used to display calendar details which can be accessed by anyone, anywhere, anytime. It is user-friendly with added advantage of To-Do lists along with calendar.
 
+## Defining Features 
+* It support provide calendar and ToDo list facility without internet.
+* Program should be simple and user friendly.
+* It should be accessible to everyone, anywhere and anythime.
+
 ## High Level and Low Level Requirements:
 * High Level Requirement
 
