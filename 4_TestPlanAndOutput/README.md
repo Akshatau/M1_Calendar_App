@@ -15,7 +15,6 @@
     a) View 
     b) Create
     c) Delete 
-    d) Update 
     e) Exit 
 8. Fetch choice.
 
@@ -33,12 +32,8 @@
    - Confirm deletion of item or exit to menu.
    - Delete existing item if any present.
    - Back to menu.
-
-    d) Update:
-   - If any operations like add or delete was performed then update list.
-   - Back to menu.
-
-    e) Exit
+   
+    d) Exit
   
          Exit Mode: End of execution
 
