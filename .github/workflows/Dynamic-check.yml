@@ -14,6 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Dynamic Analysis
-      run: gcc calendar_main.c src/calendar.c -o valgrind.out
+      run:  cd 3_Implementation
+            gcc calendar_main.c src/calendar.c -o valgrind.out
     - name: valgrind 
       run: valgrind ./valgrind.out
