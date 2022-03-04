@@ -25,7 +25,7 @@
 5) * After deletion operation   
  ![88](https://user-images.githubusercontent.com/46949702/156740246-1aa8b98f-9f05-441b-8667-da9361f4e9ab.png)
 #
-6)* User select to add item to list(entry no.3)
+6) * User select to add item to list(entry no.3)
 ![99](https://user-images.githubusercontent.com/46949702/156740249-684ee5dd-f146-4a2c-aee6-14e9b7a3d7ca.png)
 #
 7) * User selects to quit
