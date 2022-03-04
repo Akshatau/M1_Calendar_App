@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: direction
+    - run: cd 3_Implementation
     - name: build
       run: gcc calendar_main.c src/calendar.c -o calendar.exe
     - name: Run
