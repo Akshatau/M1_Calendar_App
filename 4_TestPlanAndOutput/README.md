@@ -52,12 +52,12 @@
 # Test Plan
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
-| T_01 | Input year in the format XXXX | XXXX | 2021 | 2021 | SUCCESS |
-| T_02 | Input year in the format XXXX | XXXX | 2036 | 2036 | SUCCESS |
-| T_03 | Input year in the format XXXX | XXXX | 200 | 200 | INVALID  |
-| T_04 | Input year in the format XXXX | XXXX | 0201 | 0201 | INVALID  |
-| T_05 | Input year in the format XXXX | XXXX | 22036 | 22036 | INVALID |
-| T_05 | Input year in the format XXXX | XXXX | 1999 | 1999 | VALID |
+| T_01 | Input year in the format XXXX |2021 | 2021 | 2021 | SUCCESS |
+| T_02 | Input year in the format XXXX | 2036 | 2036 | 2036 | SUCCESS |
+| T_03 | Input year in the format XXXX | 200 | 200 | INVALID  | SUCCESS  |
+| T_04 | Input year in the format XXXX | 0201 | 0201 | INVALID |SUCCESS |
+| T_05 | Input year in the format XXXX | 22036| 22036 | INVALID | SUCCESS |
+| T_05 | Input year in the format XXXX |1999 | 1999 | 1999 | SUCCESS |
 
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
@@ -86,11 +86,19 @@
 
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
-|T_05| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+|T_22| For ToDo List view|2| ToDo List | ToDo List| SUCCESS|
+|T_23| For ToDo List view|2.2| INVALID | INVALID| SUCCESS|
+|T_24| For ToDo List view|0.22|INVALID| INVALID| SUCCESS|
+|T_25| For ToDo List view|2.0| ToDo List | ToDo List| SUCCESS|
+|T_26| For ToDo List view|2.00| ToDo List | ToDo List| SUCCESS|
 
 | Test ID | Test Case Objective | Input Data | Expected Output | Actual Output | Status|
 |------|---------------------------|--------|----------------|-------------|------------|
-|T_06| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
+|T_27| Add ToDo Item to the List| HomeWork | 1.HomeWork |1.HomeWork| SUCCESS|
+|T_27| Add ToDo Item to the List| TimePass | 1.TimePass |1.TimePass| SUCCESS|
+|T_27| Add ToDo Item to the List| Walk | 1.Walk |1.Walk| SUCCESS|
+|T_27| Add ToDo Item to the List| Home Work | 1.Home Work |INVALID| FAIL|
+|T_27| Add ToDo Item to the List| Work | 1.Work |1.Work| SUCCESS|
 
 # Unit Testing Analysis
 
